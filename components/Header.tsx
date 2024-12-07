@@ -7,9 +7,12 @@ import { GoChevronDown } from "react-icons/go";
 import appContext from "@/context/appContext";
 import SupportSubComp from "./SolutionsSubComp";
 import { AnimatePresence, motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const ctx = useContext(appContext);
+
+  const pathname = usePathname();
 
   const navLinks = [
     {
@@ -44,7 +47,7 @@ const Header = () => {
           : "relative bg-black-1"
       }`}
     >
-      <Link href={""}>
+      <Link href={"/"}>
         <Image
           src={logo}
           alt="qrest logo image"
@@ -63,7 +66,11 @@ const Header = () => {
                 <Link
                   key={i}
                   href={item.link}
-                  className="text-grey-4 mr-[5rem] hover:text-white-1 transition-all duration-150 ease-in last:mr-0"
+                  className={` ${
+                    pathname.includes(item.link)
+                      ? "text-purple-3"
+                      : "text-grey-4 "
+                  } mr-[5rem] hover:text-white-1 transition-all duration-150 ease-in last:mr-0`}
                 >
                   {item.text}
                 </Link>
@@ -82,8 +89,8 @@ const Header = () => {
                 }}
                 key={i}
                 className={`${
-                  ctx.solutionsModalIsOpen ? "text-white-1" : "text-grey-4"
-                } flex items-center mr-[5rem] cursor-pointer hover:text-white-1 transition-all duration-150 ease-in`}
+                  ctx.solutionsModalIsOpen ? "text-purple-3" : "text-grey-4"
+                } flex items-center mr-[5rem] cursor-pointer hover:text-purple-3 transition-all duration-150 ease-in`}
               >
                 <p>{item.text}</p>
                 <GoChevronDown
