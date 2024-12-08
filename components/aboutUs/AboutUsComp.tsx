@@ -19,7 +19,7 @@ const AboutUsComp = () => {
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "easeIn" }}
+            transition={{ duration: 0.3, ease: "easeIn" }}
             className="text-[10rem] font-inter font-semibold leading-[9.8rem] -tracking-[0.5rem] text-white-1 mb-[2.4rem]"
           >
             Building Smarter Solutions
@@ -27,8 +27,8 @@ const AboutUsComp = () => {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, ease: "easeIn", delay: 0.5 }}
-            className="font-dmsans text-[2.4rem] leading-[3.4rem] text-[#919191]"
+            transition={{ duration: 0.3, ease: "easeIn", delay: 0.2 }}
+            className="font-dmsans text-[2.4rem] leading-[3.4rem] text-white-2"
           >
             Our goal is to empower businesses to work more efficiently, stay
             competitive, and achieve long-term success in an ever-evolving
