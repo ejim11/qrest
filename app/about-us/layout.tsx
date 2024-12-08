@@ -1,7 +1,4 @@
 import type { Metadata } from "next";
-import Header from "@/components/Header";
-import AppContextProvider from "@/context/appContextProvider";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Qrest | About us",
