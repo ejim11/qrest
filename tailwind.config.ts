@@ -55,7 +55,7 @@ export default {
     extend: {
       backgroundImage: {
         "home-1":
-          "linear-gradient(to bottom, rgba(0,0,0,1) 20%, rgba(85,0,224,0.7) , rgba(0,0,0,1) 90%), url('../assets/home/bg-1.svg')",
+          "linear-gradient(to bottom, rgba(0,0,0,1) 20%, rgba(85,0,224,0.85) , rgba(0,0,0,1) 90%), url('../assets/home/bg-1.svg')",
       },
       gridTemplateColumns: {
         "service-grid": "repeat(auto-fit, minmax(28rem, 1fr))",
