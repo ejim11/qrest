@@ -28,7 +28,7 @@ const CoreValues = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, ease: "easeIn" }}
+            transition={{ duration: 0.3, ease: "easeIn" }}
             className="font-inter font-semibold text-[7.5rem] leading-[7.5rem] -tracking-[0.5rem] text-black-2 mb-[2rem]"
           >
             Our Core Values
@@ -37,7 +37,7 @@ const CoreValues = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, ease: "easeIn", delay: 0.2 }}
+            transition={{ duration: 0.3, ease: "easeIn", delay: 0.2 }}
             className="font-dmsans text-[2rem] leading-[3rem] text-grey-1"
           >
             Our core values are the foundation of everything we do at Qrest.
@@ -49,7 +49,7 @@ const CoreValues = () => {
           initial={{ opacity: 0, x: 20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, ease: "easeIn" }}
+          transition={{ duration: 0.3, ease: "easeIn" }}
           className="rounded-[1.2rem] overflow-hidden w-[70.9rem] h-[66.3rem]"
         >
           <Image
@@ -65,10 +65,10 @@ const CoreValues = () => {
       <div className="mt-[6.4rem] grid grid-cols-service-grid gap-[2rem]">
         {coreValuesData.map((val, i: number) => (
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, ease: "easeIn", delay: i * 0.1 }}
+            transition={{ duration: 0.3, ease: "easeIn", delay: i * 0.1 }}
             key={i}
             className="flex flex-col items-center text-center"
           >

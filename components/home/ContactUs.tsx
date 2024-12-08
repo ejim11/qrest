@@ -13,7 +13,7 @@ const ContactUs = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, ease: "easeIn" }}
+          transition={{ duration: 0.3, ease: "easeIn" }}
           className="font-inter font-semibold text-[6.8rem] text-white-1 leading-[7.1rem] -tracking-[0.5rem]"
         >
           Got an Idea? Let’s Make It Happen!
@@ -22,7 +22,7 @@ const ContactUs = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, ease: "easeIn" }}
+          transition={{ duration: 0.3, ease: "easeIn" }}
           className="mt-[2rem] text-[2rem] font-dmsans leading-[2.9rem] text-white-3 mb-[3.2rem]"
         >
           We combine creativity, expertise, and a collaborative approach to
@@ -36,7 +36,7 @@ const ContactUs = () => {
         initial={{ opacity: 0, x: 40 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.5, ease: "easeIn" }}
+        transition={{ duration: 0.3, ease: "easeIn" }}
         className="w-[67.3rem] h-[71.6] flex-1"
       >
         <Image

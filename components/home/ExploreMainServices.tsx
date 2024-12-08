@@ -30,7 +30,7 @@ const ExploreMainServices = () => {
         <motion.h3
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeIn" }}
+          transition={{ duration: 0.3, ease: "easeIn" }}
           viewport={{ once: true }}
           className="text-[7.2rem] font-inter font-semibold leading-[7.2rem] -tracking-[0.5rem] text-black-2 mb-[1.6rem]"
         >
@@ -39,7 +39,7 @@ const ExploreMainServices = () => {
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeIn", delay: 0.1 }}
+          transition={{ duration: 0.3, ease: "easeIn", delay: 0.1 }}
           viewport={{ once: true }}
           className="w-[80%] text-[2rem] leading-[2.9rem] text-grey-1 font-dmsans"
         >
@@ -61,7 +61,7 @@ const ExploreMainServices = () => {
             <motion.div
               initial={{ opacity: 0, y: 40, x: i % 2 !== 0 ? 40 : -40 }}
               whileInView={{ opacity: 1, y: 0, x: 0 }}
-              transition={{ duration: 0.5, ease: "easeIn", delay: 0.1 }}
+              transition={{ duration: 0.3, ease: "easeIn", delay: 0.1 }}
               viewport={{ once: true }}
               key={i}
               className="w-[58.2rem] h-[81.2rem] mr-[3.2rem] last:mr-0 rounded-[1.6rem] overflow-hidden relative"

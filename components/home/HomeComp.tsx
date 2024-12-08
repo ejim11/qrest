@@ -24,7 +24,7 @@ const HomeComp = () => {
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeIn" }}
+          transition={{ duration: 0.3, ease: "easeIn" }}
           className="text-white-1 text-[10rem] text-center font-inter font-semibold -tracking-[0.5rem] leading-[10rem]  w-[85%]"
         >
           Empowering brand with custom{" "}
@@ -33,7 +33,7 @@ const HomeComp = () => {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeIn", delay: 0.5 }}
+          transition={{ duration: 0.3, ease: "easeIn", delay: 0.3 }}
           className="mt-[2.4rem] text-[2.4rem] text-white-2 w-[55%] font-dmsans leading-[3.4rem] text-center mb-[3.6rem]"
         >
           Bring all your projects together, create a portfolio that dazzles, and
@@ -46,7 +46,7 @@ const HomeComp = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: "easeIn", delay: 1 }}
+          transition={{ duration: 0.3, ease: "easeIn", delay: 0.7 }}
           className="w-[75%] h-[74rem]"
         >
           <Image

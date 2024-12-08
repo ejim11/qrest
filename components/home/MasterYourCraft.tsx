@@ -46,8 +46,8 @@ const MasterYourCraft = () => {
         <motion.h3
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{once: true}}
-          transition={{ duration: 0.5, ease: "easeIn" }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.3, ease: "easeIn" }}
           className="text-white-1 text-[7.2rem] font-inter font-semibold leading-[7.2rem] -tracking-[0.5rem]"
         >
           Master your craft with Resources
@@ -55,8 +55,8 @@ const MasterYourCraft = () => {
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          viewport={{once: true}}
-          transition={{ duration: 0.5, ease: "easeIn", delay: 0.1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.3, ease: "easeIn", delay: 0.1 }}
           className="text-[2rem] leading-[2.9rem] font-dmsans text-white-2 w-[60%] mt-[2.3rem]"
         >
           Unlock your full potential with resources designed to empower your
@@ -78,7 +78,7 @@ const MasterYourCraft = () => {
             <motion.div
               initial={{ opacity: 0, x: i * -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, ease: "easeIn", delay: 0.3 }}
+              transition={{ duration: 0.3, ease: "easeIn", delay: 0.3 }}
               viewport={{ once: true }}
               key={i}
               className="w-full h-full  border border-black-4 rounded-[0.6rem] overflow-hidden"

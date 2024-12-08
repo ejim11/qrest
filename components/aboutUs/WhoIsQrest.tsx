@@ -10,7 +10,7 @@ const WhoIsQrest = () => {
           initial={{ opacity: 0, x: -20 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, ease: "easeIn" }}
+          transition={{ duration: 0.3, ease: "easeIn" }}
           className="text-[8rem] font-inter font-semibold leading-[7.5rem] -tracking-[0.5rem] text-white-1"
         >
           Who is Qrest?
@@ -21,7 +21,7 @@ const WhoIsQrest = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, ease: "easeIn" }}
+          transition={{ duration: 0.3, ease: "easeIn" }}
           className="mb-[1.5rem]"
         >
           Qrest is a leading provider of user-centric business solutions,
@@ -32,7 +32,7 @@ const WhoIsQrest = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.5, ease: "easeIn", delay: 0.2 }}
+          transition={{ duration: 0.3, ease: "easeIn", delay: 0.2 }}
         >
           With expertise in branding, custom software development (including
           mobile apps and websites), and digital marketing strategies, Qrest

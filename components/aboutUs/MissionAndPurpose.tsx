@@ -26,7 +26,7 @@ const MissionAndPurpose = () => {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, ease: "easeIn" }}
+            transition={{ duration: 0.3, ease: "easeIn" }}
             className={`w-[70rem] h-[66] ${
               i % 2 === 0 ? "order-1 mr-[5rem]" : "order-2"
             }`}
@@ -49,7 +49,7 @@ const MissionAndPurpose = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, ease: "easeIn" }}
+              transition={{ duration: 0.3, ease: "easeIn" }}
               className="text-[7.5rem] font-inter font-semibold leading-[7.8rem] -tracking-[0.5rem] text-black-2"
             >
               {data.title}
@@ -58,7 +58,7 @@ const MissionAndPurpose = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, ease: "easeIn", delay: 0.2 }}
+              transition={{ duration: 0.3, ease: "easeIn", delay: 0.2 }}
               className="text-[2rem] leading-[3rem] mt-[2rem] text-grey-1"
             >
               {data.text}

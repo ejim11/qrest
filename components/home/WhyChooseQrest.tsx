@@ -44,7 +44,7 @@ That’s why we offer customized branding, web design, and digital marketing str
         <motion.h3
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeIn" }}
+          transition={{ duration: 0.3, ease: "easeIn" }}
           viewport={{ once: true }}
           className="font-inter text-[7.2rem] -tracking-[0.5rem] leading-[7.5rem] font-semibold mb-[2rem] text-black-2"
         >
@@ -53,7 +53,7 @@ That’s why we offer customized branding, web design, and digital marketing str
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeIn", delay: 0.1 }}
+          transition={{ duration: 0.3, ease: "easeIn", delay: 0.1 }}
           viewport={{ once: true }}
           className="font-dmsans text-[2rem] leading-[2.9rem] text-grey-1 mb-[3.5rem]"
         >
@@ -77,7 +77,7 @@ That’s why we offer customized branding, web design, and digital marketing str
               <motion.div
                 initial={{ opacity: 0, x: -40 }}
                 whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.5, ease: "easeIn", delay: i * 0.1 }}
+                transition={{ duration: 0.3, ease: "easeIn", delay: i * 0.1 }}
                 viewport={{ once: true }}
                 key={i}
               >
@@ -100,7 +100,7 @@ That’s why we offer customized branding, web design, and digital marketing str
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.5, ease: "easeIn", delay: 0.1 }}
+          transition={{ duration: 0.3, ease: "easeIn", delay: 0.1 }}
           viewport={{ once: true }}
         >
           <Image
