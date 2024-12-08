@@ -8,7 +8,7 @@ const Button = ({ text, styles }: { text: string; styles: string }) => {
     <motion.button
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: "easeIn", delay: 0.8 }}
+      transition={{ duration: 0.3, ease: "easeIn", delay: 0.5 }}
       className={`${styles} flex items-center text-white-1 font-inter bg-purple-2  rounded-[0.6rem] `}
     >
       <span>{text}</span>
