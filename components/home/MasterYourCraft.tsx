@@ -78,7 +78,7 @@ const MasterYourCraft = () => {
             <motion.div
               initial={{ opacity: 0, x: i * -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.3, ease: "easeIn", delay: 0.3 }}
+              transition={{ duration: 0.3, ease: "easeIn", delay: 0.2 }}
               viewport={{ once: true }}
               key={i}
               className="w-full h-full  border border-black-4 rounded-[0.6rem] overflow-hidden"
