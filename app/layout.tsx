@@ -4,6 +4,8 @@ import { Inter, DM_Sans, Geist } from "next/font/google";
 import Header from "@/components/Header";
 import AppContextProvider from "@/context/appContextProvider";
 import Footer from "@/components/Footer";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -43,6 +45,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <ToastContainer />
         </AppContextProvider>
       </body>
     </html>
