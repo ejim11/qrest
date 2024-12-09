@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Qrest | Career",
-  description: "Building the futuristic apps",
+  description: "Join the amazing qrest team",
 };
 
 export default function RootLayout({
