@@ -51,6 +51,7 @@ export default {
       pink: {
         1: "#FA08FF",
       },
+      red: "red",
     },
     extend: {
       backgroundImage: {
