@@ -9,11 +9,11 @@ const Footer = () => {
     {
       title: "explore",
       links: [
-        { link: "", text: "Solutions" },
-        { link: "", text: "About us" },
-        { link: "", text: "Our work" },
-        { link: "", text: "Career" },
-        { link: "", text: "Contact us" },
+        { link: "/", text: "Solutions" },
+        { link: "/about-us", text: "About us" },
+        { link: "/our-work", text: "Our work" },
+        { link: "/career", text: "Career" },
+        { link: "/contact", text: "Contact us" },
       ],
     },
     {
