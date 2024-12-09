@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter, DM_Sans, Geist } from "next/font/google";
+import { Inter, DM_Sans } from "next/font/google";
 import Header from "@/components/Header";
 import AppContextProvider from "@/context/appContextProvider";
 import Footer from "@/components/Footer";
@@ -19,12 +19,6 @@ const dmSans = DM_Sans({
   variable: "--font-dmsans",
 });
 
-const geist = Geist({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-geist",
-});
-
 export const metadata: Metadata = {
   title: "Qrest",
   description: "Building the futuristic apps",
@@ -36,10 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} ${dmSans.variable} ${geist.variable}`}
-    >
+    <html lang="en" className={`${inter.variable} ${dmSans.variable} `}>
       <body>
         <AppContextProvider>
           <Header />

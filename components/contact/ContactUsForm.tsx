@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import React, { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
@@ -37,7 +38,7 @@ const ContactUsForm = () => {
     },
   });
 
-  const onSubmit: SubmitHandler<FormData> = async (data: any) => {
+  const onSubmit: SubmitHandler<FormData> = async () => {
     if (!message) {
       setMsgError("Please enter some message");
       return;
@@ -47,13 +48,13 @@ const ContactUsForm = () => {
       return;
     }
 
-    const modifiedData = {
-      firstName: data.firstName,
-      lastName: data.lastName,
-      company: data.company,
-      email: data.email,
-      message,
-    };
+    // const modifiedData = {
+    //   firstName: data.firstName,
+    //   lastName: data.lastName,
+    //   company: data.company,
+    //   email: data.email,
+    //   message,
+    // };
 
     setIsLoading(true);
 
