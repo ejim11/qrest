@@ -91,7 +91,7 @@ const ContactUsForm = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="w-full flex justify-between">
           <InputComponent
-            placeholder={"Stephen"}
+            placeholder={"Enter your firstname"}
             type={"text"}
             register={register}
             error={errors}
@@ -100,9 +100,10 @@ const ContactUsForm = () => {
             pl="pl-[1.5rem]"
             containerWidth="w-[48%]"
             validation={registrationOption.firstName}
+            autoFocus={true}
           />
           <InputComponent
-            placeholder={"Chibueze"}
+            placeholder={"Enter your lastname"}
             type={"text"}
             register={register}
             error={errors}
@@ -114,7 +115,7 @@ const ContactUsForm = () => {
           />
         </div>
         <InputComponent
-          placeholder={"stephen@gmail.com"}
+          placeholder={"Enter your email"}
           type={"email"}
           register={register}
           error={errors}
@@ -125,7 +126,7 @@ const ContactUsForm = () => {
           validation={registrationOption.email}
         />
         <InputComponent
-          placeholder={"Techan Ltd"}
+          placeholder={"Enter your company name"}
           type={"text"}
           register={register}
           error={errors}
@@ -142,11 +143,11 @@ const ContactUsForm = () => {
             maxLength={150}
             required
             value={message}
-            placeholder="Hey Qrest, I have an awesome product to build, brand ..."
+            placeholder="Enter your message..."
             onChange={(e: any) => {
               setMessage(e.target.value);
             }}
-            className="placeholder:text-grey-3  border-[#231E37] text-grey-5 border rounded-md focus:ring-0 focus:outline-none bg-[#130A2A] resize-none outline-none ring-0 p-[1rem] "
+            className=" border-[#231E37] text-grey-5 border rounded-md focus:ring-0 focus:outline-none bg-[#130A2A] resize-none outline-none ring-0 p-[1rem] placeholder:text-[#3d345f] "
           />
           <small>{msgError}</small>
         </div>
