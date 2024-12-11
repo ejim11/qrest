@@ -100,7 +100,7 @@ const InputComponent: React.FC<InputProps> = (props) => {
           {...props.register(props.name, props.validation)}
           className={`${
             props.border ? "" : "border "
-          } bg-[#130A2A] placeholder:text-grey-3 font-dmsans py-[1.2rem] relative ${
+          } bg-[#130A2A] placeholder:text-[#3d345f] font-dmsans py-[1.2rem] relative ${
             props.pl ? props.pl : "pl-[4rem]"
           } pr-3 ${props.width ? props.width : "w-full"} ${
             props.height && props.height
