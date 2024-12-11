@@ -56,7 +56,11 @@ export default {
     extend: {
       backgroundImage: {
         "home-1":
-          "linear-gradient(to bottom, rgba(0,0,0,1) 20%, rgba(85,0,224,0.85) , rgba(0,0,0,1) 90%), url('../assets/home/bg-1.svg')",
+          "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 24%, rgba(85,0,224,0.8) 42%, rgba(71,0,186,0.6) 47%,  rgba(0,0,0,1) 66%), url('../assets/home/bg-1.svg')",
+        "about-1":
+          "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 24%, rgba(85,0,224,0.8) 42%,  rgba(0,0,0,1) 66%), url('../assets/home/bg-1.svg')",
+        "contact-1":
+          "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 16%, rgba(85,0,224,0.8) 52%,  rgba(0,0,0,1) 74%), url('../assets/home/bg-1.svg')",
       },
       gridTemplateColumns: {
         "service-grid": "repeat(auto-fit, minmax(28rem, 1fr))",
