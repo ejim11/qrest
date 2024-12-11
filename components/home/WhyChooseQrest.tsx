@@ -63,7 +63,7 @@ That’s why we offer customized branding, web design, and digital marketing str
         </motion.p>
       </div>
 
-      <div className="flex items-center">
+      <div className="flex items-center mt-[6rem]">
         <div className="flex-1 grid grid-cols-2 mr-[5rem] gap-[5rem]">
           {whyChooseQrestTextList.map(
             (
@@ -102,6 +102,7 @@ That’s why we offer customized branding, web design, and digital marketing str
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.3, ease: "easeIn", delay: 0.1 }}
           viewport={{ once: true }}
+          className="w-[55.3rem] h-[52rem]"
         >
           <Image
             src={whyQrestImg}
@@ -109,7 +110,7 @@ That’s why we offer customized branding, web design, and digital marketing str
             priority
             width={1000}
             height={1000}
-            className="w-[55.3rem] h-[52rem]"
+            className="w-full h-full"
           />
         </motion.div>
       </div>
