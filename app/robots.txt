@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://qrest-qtnj.vercel.app/
+
+# Sitemaps
+Sitemap: https://qrest-qtnj.vercel.app/sitemap.xml

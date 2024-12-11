@@ -20,8 +20,18 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://qrest-qtnj.vercel.app/"),
+  authors: [{ name: "Ejim Favour," }, { name: "Qrest Company" }],
   title: "Qrest",
   description: "Empowering brand with custom solutions",
+  openGraph: {
+    description: "Empowering brand with custom solutions",
+    type: "website",
+    url: "https://qrest-qtnj.vercel.app/",
+    images: [
+      { url: "https://i.ibb.co/n3G8MZV/Screenshot-2024-12-11-at-16-39-58.png" },
+    ],
+  },
 };
 
 export default function RootLayout({
