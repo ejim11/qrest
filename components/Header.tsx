@@ -43,7 +43,7 @@ const Header = () => {
     <header
       className={` h-[7rem] w-full flex items-center px-[9rem] transition-all ease-in duration-150  ${
         ctx.isHeaderSticky
-          ? "fixed top-0 z-40 bg-black-2 showHeader"
+          ? "fixed top-0 z-40 bg-blue-1 showHeader"
           : "relative bg-black-1"
       }`}
     >
@@ -80,12 +80,15 @@ const Header = () => {
             return (
               <motion.button
                 // whileTap={{ scale: 0.97 }}
-                onClick={() => {
-                  if (ctx.solutionsModalIsOpen) {
-                    ctx.setSolutionsModalIsOpen(false);
-                    return;
-                  }
+                onMouseEnter={() => {
+                  // if (ctx.solutionsModalIsOpen) {
+                  //   ctx.setSolutionsModalIsOpen(false);
+                  //   return;
+                  // }
                   ctx.setSolutionsModalIsOpen(true);
+                }}
+                onMouseLeave={() => {
+                  ctx.setSolutionsModalIsOpen(false);
                 }}
                 key={i}
                 className={`${
