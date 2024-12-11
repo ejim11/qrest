@@ -1,7 +1,5 @@
 "use client";
 import React, { useEffect } from "react";
-import Image from "next/image";
-import home1Img from "../../assets/home/home-1.png";
 import FirstSection from "../FirstSection";
 import SecondSec from "./SecondSec";
 import { motion } from "framer-motion";
@@ -13,6 +11,7 @@ import Button from "../Button";
 import { hearFromClients, pastProjectsData } from "@/utils/pastProjectsData";
 import MasterYourCraft from "./MasterYourCraft";
 import ContactUs from "./ContactUs";
+import Video from "../Video";
 
 const HomeComp = () => {
   useEffect(() => {
@@ -20,7 +19,7 @@ const HomeComp = () => {
   }, []);
   return (
     <main>
-      <FirstSection>
+      <FirstSection bg="bg-home-1">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -47,16 +46,9 @@ const HomeComp = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, ease: "easeIn", delay: 0.7 }}
-          className="w-[75%] h-[74rem]"
+          className="w-[75%] bg-transparent flex items-start rounded-[1.2rem] overflow-hidden"
         >
-          <Image
-            src={home1Img}
-            alt="first home image"
-            priority
-            width={1000}
-            height={700}
-            className="w-full h-full"
-          />
+          <Video />
         </motion.div>
       </FirstSection>
       <SecondSec />

@@ -14,8 +14,8 @@ const AboutUsComp = () => {
   }, []);
   return (
     <main>
-      <FirstSection>
-        <div className="py-[15rem] w-[60%] text-center ">
+      <FirstSection bg="bg-about-1">
+        <div className="pt-[10rem] pb-[15rem] w-[60%] text-center ">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

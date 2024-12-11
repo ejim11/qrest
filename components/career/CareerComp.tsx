@@ -14,7 +14,7 @@ const CareerComp = () => {
   }, []);
   return (
     <main>
-      <FirstSection>
+      <FirstSection bg="bg-contact-1">
         <div className="flex items-center py-[5rem]">
           <div className="flex-1 mr-[11rem]">
             <motion.h3

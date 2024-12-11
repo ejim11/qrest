@@ -10,7 +10,7 @@ const OurWorkComp = () => {
   }, []);
   return (
     <main>
-      <FirstSection>
+      <FirstSection bg="bg-about-1">
         <div className="py-[15rem] w-[60%] text-center ">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
