@@ -41,8 +41,8 @@ const SolutionsSubComp = () => {
     <motion.ul
       initial={{ opacity: 0, y: -40 }}
       animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -40 }}
-      className="absolute top-[7.2rem] bg-white-1 w-[43.4rem] px-[1rem] py-[1rem]  rounded-[0.6rem]  text-black-1 shadow-2xl"
+      exit={{ opacity: 0, y: -40, transition: { delay: 0.15 } }}
+      className="absolute z-[90] top-[7.2rem] bg-white-1 w-[43.4rem] px-[1rem] py-[1rem]  rounded-[0.6rem]  text-black-1 shadow-2xl"
     >
       {solutionsList.map(
         (item: { title: string; text: string; icon: StaticImageData }, i) => (
