@@ -21,7 +21,7 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: "Qrest",
-  description: "Building the futuristic apps",
+  description: "Empowering brand with custom solutions",
 };
 
 export default function RootLayout({
