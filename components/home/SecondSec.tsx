@@ -7,7 +7,7 @@ const SecondSec = () => {
         overall success of the brand.`;
   return (
     <section className="bg-black-1 flex items-center justify-center py-[15rem]">
-      <p className="w-[65%] text-white-1 text-center font-dmsans text-[6.4rem] leading-[6.8rem] knockout">
+      <p className="w-[70%] text-white-1 text-center font-dmsans text-[6.4rem] leading-[6.8rem] knockout">
         {textStr
           .slice()
           .split("")
