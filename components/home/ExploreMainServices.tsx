@@ -4,6 +4,8 @@ import Image, { StaticImageData } from "next/image";
 import service1Img from "../../assets/home/service1.svg";
 import service2Img from "../../assets/home/service2.svg";
 import { motion } from "framer-motion";
+import SectionCard from "../SectionCard";
+import HeaderText from "../HeaderText";
 
 const ExploreMainServices = () => {
   const mainServicesData: {
@@ -25,30 +27,25 @@ const ExploreMainServices = () => {
   ];
 
   return (
-    <section className="flex items-center justify-center flex-col pb-[14rem] bg-white-1">
-      <div className="w-[50%] text-center flex items-center justify-center flex-col">
-        <motion.h3
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.3, ease: "easeIn" }}
-          viewport={{ once: true }}
-          className="text-[7.2rem] font-inter font-semibold leading-[7.2rem] -tracking-[0.5rem] text-black-2 mb-[1.6rem]"
-        >
-          Explore our main services
-        </motion.h3>
+    <SectionCard styles="flex items-center justify-center flex-col pb-[14rem] smd:pb-[8rem] bg-white-1">
+      <div className="w-[55%] xlg:w-[75%] md:w-[90%] smd:w-full  text-center flex items-center justify-center flex-col">
+        <HeaderText
+          text="Explore our main services"
+          styles="text-black-2 font-inter "
+        />
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.3, ease: "easeIn", delay: 0.1 }}
           viewport={{ once: true }}
-          className="w-[80%] text-[2rem] leading-[2.9rem] text-grey-1 font-dmsans"
+          className="w-[80%] smd:w-full text-[2rem] sm:text-[1.5rem] leading-[2.9rem] sm:leading-[2.2rem] text-grey-1 font-dmsans"
         >
           Bring all your projects together, create a portfolio that dazzles, and
           ensure your brand stays relevant and impressive.
         </motion.p>
       </div>
 
-      <div className="w-full flex mt-[7.4rem] items-center justify-center">
+      <div className="w-full flex mt-[7.4rem] smd:mt-[4rem] items-center justify-center xlg:justify-between md:flex-wrap">
         {mainServicesData.map(
           (
             service: {
@@ -64,7 +61,7 @@ const ExploreMainServices = () => {
               transition={{ duration: 0.3, ease: "easeIn", delay: 0.1 }}
               viewport={{ once: true }}
               key={i}
-              className="w-[58.2rem] h-[81.2rem] mr-[3.2rem] last:mr-0 rounded-[1.6rem] overflow-hidden relative"
+              className="w-[58.2rem] h-[81.2rem]   xlg:w-[48%] md:w-full xlg:mr-0  mr-[3.2rem] last:mr-0 rounded-[1.6rem] overflow-hidden relative md:mb-[3rem] md:last:mb-0 md:h-[41rem]"
             >
               <Image
                 src={service.image}
@@ -72,7 +69,7 @@ const ExploreMainServices = () => {
                 priority
                 width={1000}
                 height={1000}
-                className="w-full h-full"
+                className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 py-[4.5rem] px-[3.2rem] ">
                 <div
@@ -93,7 +90,7 @@ const ExploreMainServices = () => {
                   <p
                     className={`${
                       i % 2 !== 0 ? "text-[#BDBBBE]" : "text-grey-1"
-                    } leading-[2.4rem]`}
+                    } leading-[2.4rem] sm:text-[1.5rem]`}
                   >
                     {service.text}
                   </p>
@@ -103,7 +100,7 @@ const ExploreMainServices = () => {
           )
         )}
       </div>
-    </section>
+    </SectionCard>
   );
 };
 
