@@ -13,7 +13,7 @@ const ClientFeedbackItem = ({
   clientName: string;
 }) => {
   return (
-    <div className="pr-[2.8rem]">
+    <div className="pr-[2.8rem] smd:pr-0">
       <div className="bg-white-1 shadow-[0_0_43.8px_0px_rgba(0,0,0,0.05)] px-[2.6rem] py-[2.9rem]  rounded-[1.6rem] ">
         <Image
           src={quoteImg}
@@ -26,7 +26,9 @@ const ClientFeedbackItem = ({
         <p className="text-[1.8rem] mt-[1.5rem] font-dmsans font-medium mb-[3rem] text-black-1">
           {title}
         </p>
-        <p className="leading-[2.4rem] font-dmsans text-grey-3">{text}</p>
+        <p className="leading-[2.4rem] sm:text-[1.5rem] font-dmsans text-grey-3">
+          {text}
+        </p>
       </div>
       <div className="flex items-center mt-[1rem]">
         <div className="w-[4.2rem] h-[4.2rem] rounded-full bg-grey-4 mr-[1rem]"></div>
