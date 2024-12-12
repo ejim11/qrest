@@ -8,6 +8,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { VscArrowSmallRight } from "react-icons/vsc";
 import Link from "next/link";
+import SectionCard from "../SectionCard";
+import HeaderText from "../HeaderText";
 
 const MasterYourCraft = () => {
   const masterYourCraftData: {
@@ -41,29 +43,24 @@ const MasterYourCraft = () => {
   ];
 
   return (
-    <section className="py-[14rem] px-[9rem] bg-black-1 flex flex-col items-center">
-      <div className="text-center flex items-center flex-col">
-        <motion.h3
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.3, ease: "easeIn" }}
-          className="text-white-1 text-[7.2rem] font-inter font-semibold leading-[7.2rem] -tracking-[0.5rem]"
-        >
-          Master your craft with Resources
-        </motion.h3>
+    <SectionCard styles="py-[14rem] smd:py-[8rem] md:py-[12rem] bg-black-1 flex flex-col items-center">
+      <div className="text-center flex items-center flex-col smd:text-left">
+        <HeaderText
+          text="Master your craft with Resources"
+          styles="text-white-1 font-inter "
+        />
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.3, ease: "easeIn", delay: 0.1 }}
-          className="text-[2rem] leading-[2.9rem] font-dmsans text-white-2 w-[60%] mt-[2.3rem]"
+          className="text-[2rem] sm:text-[1.5rem] leading-[2.9rem] sm:leading-[2.2rem] font-dmsans text-white-2 w-[60%] xmd:w-[75%] md:w-[90%] smd:w-full"
         >
           Unlock your full potential with resources designed to empower your
           professional journey.
         </motion.p>
       </div>
-      <div className="mt-[8rem] grid grid-cols-3 gap-[1.6rem]">
+      <div className="mt-[8rem] smd:mt-[5rem] grid grid-cols-3 gap-[1.6rem] lg:flex lg:flex-wrap lg:justify-center">
         {masterYourCraftData.map(
           (
             data: {
@@ -81,16 +78,16 @@ const MasterYourCraft = () => {
               transition={{ duration: 0.3, ease: "easeIn", delay: 0.2 }}
               viewport={{ once: true }}
               key={i}
-              className="w-full h-full  border border-black-4 rounded-[0.6rem] overflow-hidden"
+              className="w-full h-full lg:w-[45%] smd:w-full  border border-black-4 rounded-[0.6rem] overflow-hidden"
             >
-              <motion.div className="w-full h-[52.6rem] mr-[3.2rem] last:mr-0 rounded-[.4rem] overflow-hidden relative">
+              <motion.div className="w-full h-[52.6rem]  mr-[3.2rem] last:mr-0 rounded-[.4rem] overflow-hidden relative">
                 <Image
                   src={data.image}
                   alt={`${data.title} image`}
                   priority
                   width={1000}
                   height={1000}
-                  className="w-full h-full"
+                  className="w-full h-full object-cover object-top"
                 />
                 <div className="absolute bottom-0 top-0 bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(255,255,255,0.05)] to-[rgba(0,0,0,0.9)] to-[100%] py-[4.5rem] px-[3.2rem] ">
                   <div className="z-[20] relative font-dmsans flex justify-end h-full  flex-col">
@@ -117,7 +114,7 @@ const MasterYourCraft = () => {
           )
         )}
       </div>
-    </section>
+    </SectionCard>
   );
 };
 
