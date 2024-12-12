@@ -53,10 +53,34 @@ export default {
       },
       red: "red",
     },
+    screens: {
+      "3xl": { max: "1535px" },
+      // => @media (max-width: 1535px) { ... }
+      "2xl": { max: "1380px" },
+      // => @media (max-width: 1535px) { ... }
+      xl: { max: "1279px" },
+      // => @media (max-width: 1279px) { ... }
+      xlg: { max: "1150px" },
+      // => @media (max-width: 1150px) { ... }
+      lg: { max: "1024px" },
+      // => @media (max-width: 1023px) { ... }
+      xmd: { max: "950px" },
+      // => @media (max-width: 950px) { ... }
+      md: { max: "850px" },
+      // => @media (max-width: 850px) { ... }
+      smd: { max: "700px" },
+      // => @media (max-width: 700px) { ... }
+      sm: { max: "600px" },
+      // => @media (max-width: 600px) { ... }
+      ssm: { max: "500px" },
+      // => @media (max-width: 500px) { ... }
+    },
     extend: {
       backgroundImage: {
         "home-1":
           "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 24%, rgba(85,0,224,0.8) 42%, rgba(71,0,186,0.6) 47%,  rgba(0,0,0,1) 66%), url('../assets/home/bg-1.svg')",
+        "home-2":
+          "linear-gradient(to bottom, rgba(0,0,0,1) 4%, rgba(0,0,0,0.6) 32%, rgba(85,0,224,0.8) 53%,  rgba(0,0,0,1) 74%), url('../assets/home/bg-1.svg')",
         "about-1":
           "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 24%, rgba(85,0,224,0.8) 42%,  rgba(0,0,0,1) 66%), url('../assets/home/bg-1.svg')",
         "contact-1":
