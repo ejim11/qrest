@@ -6,8 +6,11 @@ import adAnnouncementIcon from "../assets/home/ad-announcement-megaphone 1.svg";
 import penToolIcon from "../assets/home/pen-tool 1.svg";
 import tvIcon from "../assets/home/monitor 1.svg";
 import codeIcon from "../assets/home/code 2.svg";
+import { useMediaQuery } from "react-responsive";
 
 const SolutionsSubComp = () => {
+  const isMobileMenu = useMediaQuery({ query: "(max-width: 850px)" });
+
   const [isMouseOver, setIsMouseOver] = useState<number | null>(null);
 
   const solutionsList: {
@@ -39,10 +42,20 @@ const SolutionsSubComp = () => {
 
   return (
     <motion.ul
-      initial={{ opacity: 0, y: -40 }}
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -40, transition: { delay: 0.15 } }}
-      className="absolute z-[90] top-[7.2rem] bg-white-1 w-[43.4rem] px-[1rem] py-[1rem]  rounded-[0.6rem]  text-black-1 shadow-2xl"
+      layout
+      initial={{
+        opacity: 0,
+        y: isMobileMenu ? 0 : -40,
+        height: isMobileMenu ? 0 : undefined,
+      }}
+      animate={{ opacity: 1, y: 0, height: isMobileMenu ? "100%" : undefined }}
+      exit={{
+        opacity: 0,
+        y: isMobileMenu ? 0 : -40,
+        height: isMobileMenu ? "0%" : undefined,
+        transition: { delay: isMobileMenu ? 0 : 0.15 },
+      }}
+      className="absolute z-[90] md:relative md:top-0 md:left-0 md:right-0 md:bottom-0 top-[7.2rem] bg-white-1 w-[43.4rem] px-[1rem] py-[1rem]  rounded-[0.6rem]  text-black-1 shadow-2xl md:mt-[1.5rem] md:w-full md:bg-purple-4"
     >
       {solutionsList.map(
         (item: { title: string; text: string; icon: StaticImageData }, i) => (
@@ -72,7 +85,7 @@ const SolutionsSubComp = () => {
               priority
               width={50}
               height={50}
-              className="w-[2.8rem] h-[2.8rem] mr-[2rem]"
+              className="w-[2.8rem] h-[2.8rem] mr-[2rem] smd:hidden"
             />
             <div className="flex flex-col text-left font-dmsans ">
               <p

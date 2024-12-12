@@ -15,6 +15,7 @@ import { StaticImageData } from "next/image";
 import Image from "next/image";
 import ProjectItem from "./home/ProjectItem";
 import ClientFeedbackItem from "./home/ClientFeedbackItem";
+import SectionCard from "./SectionCard";
 
 const CarouselContainer = ({
   carouselTitleAndText,
@@ -22,17 +23,19 @@ const CarouselContainer = ({
   styles,
   title,
   slidesToShow,
+  responsive,
 }: {
   carouselTitleAndText: React.ReactNode;
   list: any[];
   styles?: string;
   title: string;
   slidesToShow?: number;
+  responsive: any;
 }) => {
   const iconContainer: string =
-    "w-[5.6rem] h-[5.6rem] rounded-[0.6rem] bg-purple-1 flex items-center justify-center hover:bg-purple-3 transition-all duration-150 ease-in absolute -top-[12rem] ";
+    "w-[5.6rem] h-[5.6rem] rounded-[0.6rem] bg-purple-1 flex items-center justify-center hover:bg-purple-3 transition-all duration-150 ease-in absolute -top-[12rem] smd:hidden";
 
-  const iconClassName: string = "w-[2.8rem] h-[2.8rem] text-white-1";
+  const iconClassName: string = "w-[2.8rem] h-[2.8rem] text-white-1 ";
 
   function NextArrow(props: any) {
     const { className, style, onClick } = props;
@@ -65,33 +68,16 @@ const CarouselContainer = ({
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    responsive: [
-      {
-        breakpoint: 850,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          autoplay: true,
-          autoplaySpeed: 2000,
-        },
-      },
-      {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: true,
-          autoplaySpeed: 2000,
-        },
-      },
-    ],
+    responsive: responsive,
     customPaging: function (i: any) {
       return <div className="  "></div>;
     },
   };
 
   return (
-    <section className={`${styles} pb-[14rem] px-[9rem] `}>
+    <SectionCard
+      styles={`${styles} pb-[14rem] smd:pb-[8rem] md:pb-[12rem] px-[9rem] `}
+    >
       <div className="flex">
         <div className="flex-1">{carouselTitleAndText} </div>
         {/* <div className="flex ml-auto mt-auto">
@@ -103,7 +89,7 @@ const CarouselContainer = ({
           </button>
         </div> */}
       </div>
-      <div className="w-full mt-[6.4rem]">
+      <div className="w-full mt-[6.4rem] smd:mt-[5rem]">
         {title === "projects" && (
           <Slider {...settings}>
             {list.map((project: any, i: number) => (
@@ -124,7 +110,7 @@ const CarouselContainer = ({
           </Slider>
         )}
       </div>
-    </section>
+    </SectionCard>
   );
 };
 

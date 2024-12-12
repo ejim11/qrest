@@ -36,9 +36,9 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="bg-blue-1 py-[14rem] px-[9rem]">
-      <div className="w-full flex">
-        <div className="w-[40%]">
+    <footer className="bg-blue-1 py-[14rem] smd:py-[8rem] md:py-[12rem] px-[9rem] 2xl:px-[5rem] xlg:px-[3rem] smd:px-[2rem]">
+      <div className="w-full flex md:flex-wrap">
+        <div className="w-[40%] md:w-full smd:flex smd:flex-col smd:items-center smd:text-center">
           <Image
             src={logo2}
             alt="logo icon"
@@ -54,9 +54,9 @@ const Footer = () => {
             innovation are essential for success
           </p>
         </div>
-        <div className="flex flex-1 justify-between ml-[18rem]">
+        <div className="flex flex-1 smd:flex-col smd:items-center smd:justify-start justify-between ml-[18rem] lg:ml-[9rem] xmd:ml-[5rem] md:ml-0 md:mt-[5rem]">
           {footerLinksData.map((link, i) => (
-            <div key={i}>
+            <div key={i} className="smd:mb-[5rem] smd:text-center">
               <p className="text-[2rem] font-dmsans font-medium text-white-1 capitalize mb-[2rem]">
                 {link.title}
               </p>

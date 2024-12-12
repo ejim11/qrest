@@ -9,7 +9,7 @@ const Button = ({ text, styles }: { text: string; styles: string }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, ease: "easeIn", delay: 0.5 }}
-      className={`${styles} flex items-center text-white-1 font-inter bg-purple-2  rounded-[0.6rem] `}
+      className={`${styles} flex sm:text-[1.5rem] items-center text-white-1 font-inter bg-purple-2  rounded-[0.6rem] `}
     >
       <span>{text}</span>
       <RiArrowRightUpLine className="text-current w-[2rem] h-[2rem] ml-[2rem]" />
