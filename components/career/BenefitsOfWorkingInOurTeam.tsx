@@ -8,6 +8,7 @@ import benefitImg5 from "../../assets/career/benefit5.svg";
 import benefitImg6 from "../../assets/career/benefit6.svg";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import SectionCard from "../SectionCard";
 
 const BenefitsOfWorkingInOurTeam = () => {
   const data = [
@@ -44,14 +45,14 @@ const BenefitsOfWorkingInOurTeam = () => {
   ];
 
   return (
-    <section className="py-[14rem] px-[9rem] bg-white-1 flex flex-col items-center">
-      <div className="w-[60%] text-center">
+    <SectionCard styles="py-[14rem] smd:py-[8rem] md:py-[12rem]  bg-white-1 flex flex-col items-center">
+      <div className="w-[60%] xlg:w-[70%] lg:w-[90%] xmd:w-full text-center">
         <motion.h3
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.3, ease: "easeIn" }}
-          className="font-inter font-semibold text-[7.2rem] leading-[7.2rem] -tracking-[0.5rem] text-black-2 mb-[2rem]"
+          className="font-inter font-semibold text-[7.2rem] xlg:text-[6rem] xmd:text-[5rem] smd:text-[4rem] smd:-tracking-[0.1rem] smd:leading-[4rem]  leading-[7.2rem] -tracking-[0.5rem] text-black-2 mb-[2rem]"
         >
           Benefits of Working in Our Team
         </motion.h3>
@@ -60,13 +61,13 @@ const BenefitsOfWorkingInOurTeam = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.3, ease: "easeIn", delay: 0.2 }}
-          className="font-dmsans text-[2rem] leading-[3rem] text-grey-1"
+          className="font-dmsans text-[2rem] leading-[3rem]  sm:text-[1.5rem] sm:leading-[2.2rem]  text-grey-1"
         >
           Working at Qrest offers more than just a job, it’s an opportunity to
           grow and thrive in a collaborative, innovative environment. 
         </motion.p>
       </div>
-      <div className="grid grid-cols-service-grid w-full gap-[5rem] mt-[8rem]">
+      <div className="grid grid-cols-3 xmd:grid-cols-2 sm:grid-cols-1 w-full gap-[5rem] sm:gap-[3.4rem] mt-[8rem] sm:mt-[5rem]">
         {data.map((benefit, i) => (
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -87,13 +88,13 @@ const BenefitsOfWorkingInOurTeam = () => {
             <p className="mt-[1.6rem] mb-[1rem] text-[2.2rem] font-medium -tracking-[0.1rem] text-black-1 font-dmsans">
               {benefit.title}
             </p>
-            <p className="text-grey-1 font-dmsans leading-[2.4rem] -tracking-[0.1rem]">
+            <p className="text-grey-1 font-dmsans leading-[2.4rem]  sm:text-[1.5rem] sm:leading-[2.2rem]  -tracking-[0.1rem]">
               {benefit.text}
             </p>
           </motion.div>
         ))}
       </div>
-    </section>
+    </SectionCard>
   );
 };
 

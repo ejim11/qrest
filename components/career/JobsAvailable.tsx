@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import React from "react";
+import SectionCard from "../SectionCard";
 
 const JobsAvailable = () => {
   const data = [
@@ -23,13 +24,13 @@ const JobsAvailable = () => {
   ];
 
   return (
-    <section className="px-[9rem] py-[14rem] bg-[#0E0A1D]">
+    <SectionCard styles=" py-[14rem] smd:py-[8rem] md:py-[12rem] sm:text-center  bg-[#0E0A1D]">
       <motion.h3
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.3, ease: "easeIn" }}
-        className="font-inter font-semibold text-[7.2rem] leading-[7.5rem] -tracking-[0.5rem] text-white-1 mb-[2rem]"
+        className="font-inter font-semibold text-[7.2rem]  xlg:text-[6rem] xmd:text-[5rem] smd:text-[4rem] smd:-tracking-[0.1rem] smd:leading-[4rem]  leading-[7.5rem] -tracking-[0.5rem] text-white-1 mb-[2rem]"
       >
         Jobs Available
       </motion.h3>
@@ -38,14 +39,14 @@ const JobsAvailable = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.3, ease: "easeIn", delay: 0.2 }}
-        className="font-dmsans text-[2rem] leading-[3rem] text-white-2"
+        className="font-dmsans text-[2rem] leading-[3rem]  sm:text-[1.5rem] sm:leading-[2.2rem]  text-white-2"
       >
         Check out our current openings and take the next step in your career
         with Qrest. We’re always looking for talented, passionate individuals to
         join our team and contribute to our mission of delivering innovative
         digital solutions.
       </motion.p>
-      <div className="mt-[8rem] grid grid-cols-service-grid gap-[5rem]">
+      <div className="mt-[8rem] grid grid-cols-service-grid lg:grid-cols-2 md:grid-cols-1 gap-[5rem]">
         {data.map((data, i) => (
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -53,12 +54,12 @@ const JobsAvailable = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.3, ease: "easeIn", delay: i * 0.1 }}
             key={data.title}
-            className="bg-blue-1 border border-[#1D2134] rounded-[1.6rem] px-[2.4rem] py-[2.8rem] flex flex-col"
+            className="bg-blue-1 border border-[#1D2134] sm:items-center sm:text-center rounded-[1.6rem] px-[2.4rem] py-[2.8rem] flex flex-col"
           >
-            <p className="text-[3.2rem] font-inter font-medium -tracking-[0.2rem] text-[#BCABFF] mb-[2.8rem]">
+            <p className="text-[3.2rem] sm:text-[2.6rem] font-inter font-medium -tracking-[0.2rem] text-[#BCABFF] mb-[2.8rem]">
               {data.title}
             </p>
-            <p className="text-white-2 font-dmsans leading-[2.5rem] mb-[2.4rem]">
+            <p className="text-white-2 font-dmsans  sm:text-[1.5rem] sm:leading-[2.2rem]  leading-[2.5rem] mb-[2.4rem]">
               {data.text}
             </p>
             {data.linkText && (
@@ -72,7 +73,7 @@ const JobsAvailable = () => {
           </motion.div>
         ))}
       </div>
-    </section>
+    </SectionCard>
   );
 };
 
