@@ -28,7 +28,7 @@ const CaseStudies = () => {
   ];
 
   return (
-    <SectionCard styles="px-[9rem] py-[14rem] smd:py-[8rem] md:py-[12rem] items-center flex flex-col">
+    <SectionCard styles=" py-[14rem] smd:py-[8rem] md:py-[12rem] items-center flex flex-col">
       <motion.h3
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
