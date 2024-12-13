@@ -9,7 +9,7 @@ import codeIcon from "../assets/home/code 2.svg";
 import { useMediaQuery } from "react-responsive";
 
 const SolutionsSubComp = () => {
-  const isMobileMenu = useMediaQuery({ query: "(max-width: 850px)" });
+  const isMobileView = useMediaQuery({ query: "(max-width: 850px)" });
 
   const [isMouseOver, setIsMouseOver] = useState<number | null>(null);
 
@@ -44,18 +44,25 @@ const SolutionsSubComp = () => {
     <motion.ul
       layout
       initial={{
-        opacity: 0,
-        y: isMobileMenu ? 0 : -40,
-        height: isMobileMenu ? 0 : undefined,
+        opacity: isMobileView ? undefined : 0,
+        y: isMobileView ? undefined : -40,
+        height: isMobileView ? 0 : undefined,
       }}
-      animate={{ opacity: 1, y: 0, height: isMobileMenu ? "100%" : undefined }}
+      animate={{
+        opacity: isMobileView ? undefined : 1,
+        y: isMobileView ? undefined : 0,
+        height: isMobileView ? "100%" : undefined,
+      }}
       exit={{
-        opacity: 0,
-        y: isMobileMenu ? 0 : -40,
-        height: isMobileMenu ? "0%" : undefined,
-        transition: { delay: isMobileMenu ? 0 : 0.15 },
+        opacity: isMobileView ? undefined : 0,
+        y: isMobileView ? undefined : -40,
+        height: isMobileView ? 0 : undefined,
+        transition: {
+          delay: isMobileView ? undefined : 0.15,
+          ease: isMobileView ? "easeIn" : undefined,
+        },
       }}
-      className="absolute z-[90] md:relative md:top-0 md:left-0 md:right-0 md:bottom-0 top-[7.2rem] bg-white-1 w-[43.4rem] px-[1rem] py-[1rem]  rounded-[0.6rem]  text-black-1 shadow-2xl md:mt-[1.5rem] md:w-full md:bg-purple-4"
+      className="absolute z-[90] md:relative md:top-0 md:left-0 md:right-0 md:bottom-0 top-[7.2rem] bg-white-1 w-[43.4rem] px-[1rem] py-[1rem]  rounded-[0.6rem] md:bg-black-1  text-black-1 shadow-2xl md:mt-[1.5rem] md:w-full "
     >
       {solutionsList.map(
         (item: { title: string; text: string; icon: StaticImageData }, i) => (
@@ -66,7 +73,7 @@ const SolutionsSubComp = () => {
             transition={{
               delay: (i + 1) * 0.1,
               type: "spring",
-              stiffness: 300,
+              stiffness: 200,
               damping: 24,
             }}
             // variants={itemVariants}
@@ -87,10 +94,12 @@ const SolutionsSubComp = () => {
               height={50}
               className="w-[2.8rem] h-[2.8rem] mr-[2rem] smd:hidden"
             />
-            <div className="flex flex-col text-left font-dmsans ">
+            <div className="flex flex-col md:items-center md:text-center  text-left font-dmsans ">
               <p
                 className={`${
-                  isMouseOver === i ? " text-purple-2" : "text-black-2 "
+                  isMouseOver === i
+                    ? " text-purple-2"
+                    : "text-black-2 md:text-white-1"
                 } text-[1.8rem] font-medium`}
               >
                 {item.title}
