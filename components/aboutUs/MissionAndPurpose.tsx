@@ -19,16 +19,19 @@ const MissionAndPurpose = () => {
     },
   ];
   return (
-    <section className="px-[9rem] pt-[14rem]">
+    <section className="px-[9rem] pt-[14rem] 2xl:px-[5rem] xlg:px-[3rem] smd:px-[2rem] smd:pt-[8rem]">
       {missionAndPurposeData.map((data, i: number) => (
-        <div className="flex items-center mb-[15rem] last:mb-0" key={i}>
+        <div
+          className="flex items-center smd:flex-col smd:text-center mb-[15rem] smd:mb-[7rem] last:mb-0"
+          key={i}
+        >
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.3, ease: "easeIn" }}
-            className={`w-[70rem] h-[66] ${
-              i % 2 === 0 ? "order-1 mr-[5rem]" : "order-2"
+            className={`w-[70rem] 2xl:w-[45%] h-[66] smd:order-2 smd:mt-[3rem] smd:w-[90%] sm:w-full ${
+              i % 2 === 0 ? "order-1 mr-[5rem] smd:mr-0" : "order-2"
             }`}
           >
             <Image
@@ -41,16 +44,17 @@ const MissionAndPurpose = () => {
             />
           </motion.div>
           <div
-            className={`flex-1 flex flex-col ${
-              i % 2 === 0 ? "order-2" : "order-1 mr-[5rem]"
+            className={`flex-1 flex flex-col smd:order-1 ${
+              i % 2 === 0 ? "order-2 " : "order-1 mr-[5rem] smd:mr-0"
             }`}
           >
+            ]
             <motion.h3
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, ease: "easeIn" }}
-              className="text-[7.5rem] font-inter font-semibold leading-[7.8rem] -tracking-[0.5rem] text-black-2"
+              className="text-[7.5rem]  xlg:text-[6rem] xmd:text-[5rem] smd:text-[4rem] smd:-tracking-[0.1rem] smd:leading-[4rem] font-inter font-semibold leading-[7.8rem]  xmd:-tracking-[0.3rem] -tracking-[0.5rem] text-black-2"
             >
               {data.title}
             </motion.h3>
@@ -59,7 +63,7 @@ const MissionAndPurpose = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, ease: "easeIn", delay: 0.2 }}
-              className="text-[2rem] leading-[3rem] mt-[2rem] text-grey-1"
+              className="text-[2rem] leading-[3rem] sm:text-[1.5rem] sm:leading-[2.2rem] mt-[2rem] text-grey-1"
             >
               {data.text}
             </motion.p>
