@@ -79,7 +79,7 @@ const Header = () => {
               opacity: 0,
               // height: isMobileView ? "0%" : undefined,
             }}
-            transition={{ ease: "easeIn" }}
+            transition={{ ease: "easeIn", duration: 0.2 }}
             className={`  md:flex hidden  items-center flex-1 md:absolute  md:top-[7rem] md:z-[120] md:bg-[rgba(0,0,0,0.4)]  md:h-screen md:w-screen md:bottom-0 md:left-0 md:right-0 md:items-start md:justify-between md:transition-all md:duration-150 md:ease-in`}
           >
             <div className="absolute top-0 left-0 bottom-0 right-0  backdrop-blur-[0.5rem] z-[50]"></div>
@@ -88,9 +88,9 @@ const Header = () => {
             >
               <HeaderNav navLinks={navLinks} onClick={toggleMenuIsVisible} />
               <motion.button
-                initial={{ opacity: isMobileView ? 0 : undefined }}
-                animate={{ opacity: isMobileView ? 1 : undefined }}
-                transition={{ delay: isMobileView ? 0.01 : undefined }}
+                // initial={{ opacity: isMobileView ? 0 : undefined }}
+                // animate={{ opacity: isMobileView ? 1 : undefined }}
+                // transition={{ delay: isMobileView ? 0.01 : undefined }}
                 className="bg-pink-1 text-white-1 py-[1.8rem] md:mt-[1.5rem] mb-[1.5rem] px-[2.6rem] md:w-full rounded-[0.6rem]"
               >
                 Book a service
