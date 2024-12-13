@@ -63,25 +63,25 @@ const Header = () => {
       <AnimatePresence>
         {menuIsVisible && (
           <motion.div
-            initial={{
-              opacity: 0,
-              // height: isMobileView ? 0 : undefined,
-            }}
-            animate={{
-              opacity: 1,
-              // height: isMobileView ? "100vh" : undefined,
-              transition: { duration: 0.01 },
-            }}
-            exit={{
-              opacity: 0,
-              // height: isMobileView ? "0%" : undefined,
-            }}
-            transition={{ ease: "easeIn", duration: 0.2 }}
+            // initial={{
+            //   opacity: 0,
+            //   // height: isMobileView ? 0 : undefined,
+            // }}
+            // animate={{
+            //   opacity: 1,
+            //   // height: isMobileView ? "100vh" : undefined,
+            //   transition: { duration: 0.01 },
+            // }}
+            // exit={{
+            //   opacity: 0,
+            //   // height: isMobileView ? "0%" : undefined,
+            // }}
+            // transition={{ ease: "easeIn", duration: 0.2 }}
             className={`  md:flex hidden  items-center flex-1 md:absolute  md:top-[7rem] md:z-[120] md:bg-[rgba(0,0,0,0.4)]  md:h-screen md:w-screen md:bottom-0 md:left-0 md:right-0 md:items-start md:justify-between md:transition-all md:duration-150 md:ease-in`}
           >
             <div className="absolute top-0 left-0 bottom-0 right-0  backdrop-blur-[0.5rem] z-[50]"></div>
             <div
-              className={` flex-1 z-[90] items-center md:flex-col md:bg-black-1  md:items-start md:h-auto md:p-[2rem]`}
+              className={` flex-1 z-[120] items-center md:flex-col md:bg-black-1  md:items-start md:h-auto md:p-[2rem]`}
             >
               <HeaderNav navLinks={navLinks} onClick={toggleMenuIsVisible} />
               <motion.button
