@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unsafe-function-type */
 "use client";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
@@ -8,7 +10,7 @@ import tvIcon from "../assets/home/monitor 1.svg";
 import codeIcon from "../assets/home/code 2.svg";
 import { useMediaQuery } from "react-responsive";
 
-const SolutionsSubComp = () => {
+const SolutionsSubComp = ({ onClick }: { onClick: any }) => {
   const isMobileView = useMediaQuery({ query: "(max-width: 850px)" });
 
   const [isMouseOver, setIsMouseOver] = useState<number | null>(null);
@@ -67,6 +69,7 @@ const SolutionsSubComp = () => {
       {solutionsList.map(
         (item: { title: string; text: string; icon: StaticImageData }, i) => (
           <motion.li
+            onClick={onClick}
             initial={{ opacity: 0, y: 20, x: 20 }}
             whileInView={{ opacity: 1, y: 0, x: 0 }}
             viewport={{ once: true }}

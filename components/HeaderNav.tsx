@@ -8,7 +8,7 @@ import React, { useContext } from "react";
 import { GoChevronDown } from "react-icons/go";
 import { useMediaQuery } from "react-responsive";
 
-const HeaderNav = ({ navLinks }: { navLinks: any }) => {
+const HeaderNav = ({ navLinks, onClick }: { navLinks: any; onClick?: any }) => {
   const ctx = useContext(appContext);
 
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1150px)" });
@@ -20,6 +20,7 @@ const HeaderNav = ({ navLinks }: { navLinks: any }) => {
         if (item.link) {
           return (
             <Link
+              onClick={onClick}
               key={i}
               href={item.link}
               className={` ${
