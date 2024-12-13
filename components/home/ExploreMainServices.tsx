@@ -32,20 +32,13 @@ const ExploreMainServices = () => {
         <HeaderText
           text="Explore our main services"
           styles="text-black-2 font-inter "
+          paragraph=" Bring all your projects together, create a portfolio that dazzles, and
+          ensure your brand stays relevant and impressive."
+          paragraphStyle="text-grey-1"
         />
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.3, ease: "easeIn", delay: 0.1 }}
-          viewport={{ once: true }}
-          className="w-[80%] smd:w-full text-[2rem] sm:text-[1.5rem] leading-[2.9rem] sm:leading-[2.2rem] text-grey-1 font-dmsans"
-        >
-          Bring all your projects together, create a portfolio that dazzles, and
-          ensure your brand stays relevant and impressive.
-        </motion.p>
       </div>
 
-      <div className="w-full flex mt-[7.4rem] smd:mt-[4rem] items-center justify-center xlg:justify-between md:flex-wrap">
+      <div className="w-full flex mt-[7.4rem] smd:mt-[4rem] items-center justify-center xlg:justify-between md:flex-wrap overflow-x-hidden">
         {mainServicesData.map(
           (
             service: {
@@ -77,7 +70,7 @@ const ExploreMainServices = () => {
                     i % 2 !== 0
                       ? "from-[rgba(0,0,0,.05)] to-[rgba(0,0,0,1)]"
                       : "from-[rgba(235,235,235,0.3)] to-[rgba(235,235,235,1)] "
-                  }  to-[100%] blured-box backdrop-blur-[0.5rem]  z-[10]`}
+                  }  to-[100%] backdrop-blur-[0.5rem]  z-[10]`}
                 ></div>
                 <div className="z-[20] relative font-dmsans">
                   <p
