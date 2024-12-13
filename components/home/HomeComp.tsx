@@ -112,18 +112,11 @@ const HomeComp = () => {
             <HeaderText
               text=" Our Past Projects"
               styles="text-black-2 font-inter "
-            />
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.3, ease: "easeIn" }}
-              viewport={{ once: true }}
-              className="text-[2rem] sm:text-[1.5rem] text-grey-1 font-dmsans mb-[2rem]"
-            >
-              From innovative designs to impactful projects, our gallery
+              paragraphStyle="text-grey-1  mb-[3.2rem] smd:mb-[2rem] "
+              paragraph="From innovative designs to impactful projects, our gallery
               highlights the diverse and impressive work created using
-              WorkGallery
-            </motion.p>
+              WorkGallery"
+            />
             <Button
               text={"View all"}
               styles="px-[4rem] py-[1.4rem] smd:text-[2rem] smd:w-full smd:justify-between "
@@ -143,17 +136,10 @@ const HomeComp = () => {
             <HeaderText
               text="Hear from our clients"
               styles="text-black-2 font-inter "
+              paragraphStyle="text-grey-1  mb-[3.2rem] smd:mb-[2rem] "
+              paragraph=" FLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolo."
             />
-            <motion.p
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.3, ease: "easeIn" }}
-              viewport={{ once: true }}
-              className="text-[2rem] sm:text-[1.5rem] text-grey-1 font-dmsans mb-[2rem] smd:mb-0"
-            >
-              FLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolo.
-            </motion.p>
           </div>
         }
         responsive={clientsSlideResponsive}

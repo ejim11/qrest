@@ -47,18 +47,11 @@ const MasterYourCraft = () => {
       <div className="text-center flex items-center flex-col smd:text-left">
         <HeaderText
           text="Master your craft with Resources"
-          styles="text-white-1 font-inter "
+          styles="text-white-1 font-inter smd:text-center "
+          paragraph=" Unlock your full potential with resources designed to empower your
+          professional journey."
+          paragraphStyle=" w-[60%] xmd:w-[75%] md:w-[90%] smd:w-full text-white-2 smd:text-center "
         />
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.3, ease: "easeIn", delay: 0.1 }}
-          className="text-[2rem] sm:text-[1.5rem] leading-[2.9rem] sm:leading-[2.2rem] font-dmsans text-white-2 w-[60%] xmd:w-[75%] md:w-[90%] smd:w-full"
-        >
-          Unlock your full potential with resources designed to empower your
-          professional journey.
-        </motion.p>
       </div>
       <div className="mt-[8rem] smd:mt-[5rem] grid grid-cols-3 gap-[1.6rem] lg:flex lg:flex-wrap lg:justify-center">
         {masterYourCraftData.map(

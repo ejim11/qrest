@@ -46,18 +46,11 @@ That’s why we offer customized branding, web design, and digital marketing str
         <HeaderText
           text=" Why you should choose Qrest"
           styles="font-inter text-black-2"
-        />
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.3, ease: "easeIn", delay: 0.1 }}
-          viewport={{ once: true }}
-          className="font-dmsans text-[2rem] sm:text-[1.5rem] leading-[2.9rem] sm:leading-[2.2rem] text-grey-1 mb-[3.5rem]"
-        >
-          We combine creativity, technology, and strategic insights to address
+          paragraphStyle="text-grey-1"
+          paragraph="We combine creativity, technology, and strategic insights to address
           your unique business challenges, ensuring you stay ahead in a
-          competitive market. 
-        </motion.p>
+          competitive market. "
+        />
       </div>
 
       <div className="flex items-center mt-[6rem] smd:mt-[3rem] xlg:flex-col">
@@ -102,7 +95,7 @@ That’s why we offer customized branding, web design, and digital marketing str
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.3, ease: "easeIn", delay: 0.1 }}
           viewport={{ once: true }}
-          className="w-[55.3rem] h-[52rem] smd:h-[29rem] xlg:w-[80%] smd:w-full"
+          className="w-[55.3rem] h-[52rem] smd:h-[33rem]  xlg:w-[80%] smd:w-[90%] sm:w-full "
         >
           <Image
             src={whyQrestImg}

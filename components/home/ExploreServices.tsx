@@ -50,17 +50,10 @@ const ExploreServices = () => {
         <HeaderText
           text=" Explore our main services"
           styles="text-white-1 font-inter "
+          paragraph="  Bring all your projects together, create a portfolio that dazzles, and
+          ensure your brand stays relevant and impressive."
+          paragraphStyle="text-white-2  mb-[8rem] smd:mb-[4rem] "
         />
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.3, ease: "easeIn", delay: 0.1 }}
-          viewport={{ once: true }}
-          className="font-dmsans text-[2rem] sm:text-[1.5rem]  leading-[2.9rem] sm:leading-[2.2rem] text-white-2 mt-[2rem] mb-[8rem] smd:mb-[4rem] "
-        >
-          Bring all your projects together, create a portfolio that dazzles, and
-          ensure your brand stays relevant and impressive.
-        </motion.p>
       </div>
       <div className="grid grid-cols-4 gap-[1.8rem] xlg:grid-cols-2 smd:grid-cols-1 ">
         {servicesList.map(
