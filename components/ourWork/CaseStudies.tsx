@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { RiArrowRightUpLine } from "react-icons/ri";
 import { motion } from "framer-motion";
+import SectionCard from "../SectionCard";
 
 const CaseStudies = () => {
   const [choosenFilters, setChoosenFilters] = useState<string[]>([]);
@@ -27,13 +28,13 @@ const CaseStudies = () => {
   ];
 
   return (
-    <section className="px-[9rem] py-[14rem] items-center flex flex-col">
+    <SectionCard styles="px-[9rem] py-[14rem] smd:py-[8rem] md:py-[12rem] items-center flex flex-col">
       <motion.h3
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.3, ease: "easeIn" }}
-        className="text-[8rem] leading-[7.5rem] -tracking-[0.5rem] font-inter font-semibold mb-[2rem] text-black-2"
+        className="text-[8rem] xlg:text-[6rem] xmd:text-[5rem] smd:text-[4rem] smd:-tracking-[0.1rem] smd:leading-[4rem]  leading-[7.5rem]  -tracking-[0.5rem] font-inter font-semibold mb-[2rem] text-black-2"
       >
         Our Case Studies
       </motion.h3>
@@ -42,17 +43,17 @@ const CaseStudies = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.3, ease: "easeIn" }}
-        className="text-[2.4rem] leading-[3.6rem] font-dmsans text-grey-2 w-[70%] text-center"
+        className="text-[2.4rem]  sm:text-[1.5rem] sm:leading-[2.2rem] leading-[3.6rem] font-dmsans text-grey-2 w-[70%]  lg:w-[90%] xmd:w-full text-center"
       >
         Each case study illustrates our expertise in branding, custom software
         development, and digital marketing, demonstrating the tangible results
         we&apos;ve achieved together.
       </motion.p>
-      <div className="mt-[6.4rem] flex flex-col items-center">
-        <p className="text-[2.4rem] text-black-2 font-dmsans font-medium mb-[3.2rem]">
+      <div className="mt-[6.4rem] sm:mt-[3.5rem] flex flex-col items-center">
+        <p className="text-[2.4rem] sm:text-[2rem] text-black-2 font-dmsans font-medium mb-[3.2rem]">
           Filter with Tags:
         </p>
-        <div className="flex justify-center w-[80%] flex-wrap items-start ">
+        <div className="flex justify-center w-[80%] lg:w-[90%] xmd:w-full flex-wrap items-start ">
           {filters.map((filter: string, i: number) => (
             <motion.button
               onClick={() => {
@@ -70,7 +71,7 @@ const CaseStudies = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.3, ease: "easeIn", delay: i * 0.1 }}
               key={filter}
-              className={`px-[2.3rem] py-[1rem]  mr-[2.4rem] mb-[2rem] last:mb-0 last:mr-0 rounded-[2.5rem] capitalize  font-dmsans text-[2rem] hover:bg-purple-3 ease-in transition-all duration-150 hover:text-white-1 ${
+              className={`px-[2.3rem] py-[1rem] sm:text-[1.5rem] sm:leading-[2.2rem]   mr-[2.4rem] mb-[2rem] last:mb-0 last:mr-0 rounded-[2.5rem] capitalize  font-dmsans text-[2rem] hover:bg-purple-3 ease-in transition-all duration-150 hover:text-white-1 ${
                 choosenFilters.includes(filter)
                   ? "bg-purple-2 text-white-1"
                   : "bg-[#F7F7F7] text-black-2"
@@ -81,7 +82,7 @@ const CaseStudies = () => {
           ))}
         </div>
       </div>
-      <div className="flex flex-col mt-[12rem] items-center">
+      <div className="flex flex-col mt-[12rem] smd:mt-[10rem] sm:mt-[8rem] items-center">
         {works
           .filter((work) => {
             if (choosenFilters.length <= 0) {
@@ -104,7 +105,7 @@ const CaseStudies = () => {
             ) => (
               <div
                 key={i}
-                className="flex flex-col items-center mb-[12rem] w-[80%] last:mb-0"
+                className="flex flex-col items-center mb-[12rem] smd:mb-[10rem] sm:mb-[8rem] w-[80%] lg:w-[90%] xmd:w-full last:mb-0"
               >
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
@@ -113,10 +114,10 @@ const CaseStudies = () => {
                   transition={{ duration: 0.3, ease: "easeIn" }}
                   className="flex items-baseline "
                 >
-                  <h2 className="font-inter font-semibold text-[6.4rem] -tracking-[0.5rem] mr-[1.6rem] text-black-2">
+                  <h2 className="font-inter font-semibold text-[6.4rem] xlg:text-[6rem] xmd:text-[5rem] smd:text-[4rem] smd:-tracking-[0.1rem] smd:leading-[4rem] -tracking-[0.5rem] mr-[1.6rem] text-black-2">
                     {work.title}
                   </h2>
-                  <span className="text-grey-1 font-dmsans leading-[2.9rem] text-[2rem]">
+                  <span className="text-grey-1 font-dmsans leading-[2.9rem] sm:text-[1.5rem] sm:leading-[2.2rem] text-[2rem]">
                     {work.year}
                   </span>
                 </motion.div>
@@ -125,11 +126,11 @@ const CaseStudies = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, ease: "easeIn", delay: 0.1 }}
-                  className="text-center font-dmsans leading-[2.9rem] text-[2rem] text-grey-1 my-[3.2rem]"
+                  className="text-center font-dmsans leading-[2.9rem] text-[2rem] sm:text-[1.5rem] sm:leading-[2.2rem] text-grey-1 my-[3.2rem] sm:mt-[1.7rem] sm:mb-[2.7rem]"
                 >
                   {work.text}
                 </motion.p>
-                <div className="flex justify-center  flex-wrap items-start">
+                <div className="flex justify-center  flex-wrap items-start ">
                   {work.tags.map((tag, i) => (
                     <motion.p
                       initial={{ opacity: 0 }}
@@ -141,7 +142,7 @@ const CaseStudies = () => {
                         delay: i * 0.15,
                       }}
                       key={tag + i}
-                      className="px-[2.3rem] py-[1rem] bg-[#F7F7F7] mr-[2.4rem] mb-[2rem] last:mb-0 last:mr-0 rounded-[2.5rem] capitalize text-black-2 font-dmsans text-[2rem] "
+                      className="px-[2.3rem] py-[1rem] bg-[#F7F7F7] mr-[2.4rem] mb-[2rem] last:mr-0 rounded-[2.5rem] capitalize text-black-2 font-dmsans text-[2rem] sm:text-[1.5rem] sm:leading-[2.2rem] "
                     >
                       {tag}
                     </motion.p>
@@ -152,10 +153,11 @@ const CaseStudies = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, ease: "easeIn" }}
+                  className="sm:mt-[0.5rem] smd:w-full mb-[3.2rem] sm:mb-[2.2rem]"
                 >
                   <Link
                     href={work.link}
-                    className={` flex items-center text-white-1 font-inter bg-purple-2  rounded-[0.6rem] px-[2.8rem] py-[1.4rem] mb-[3.2rem]`}
+                    className={` smd:justify-between flex items-center text-white-1 font-inter bg-purple-2  rounded-[0.6rem] px-[2.8rem] py-[1.4rem]  `}
                   >
                     <span className="font-medium capitalize font-inter ">
                       {work.linkText}
@@ -168,7 +170,7 @@ const CaseStudies = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, ease: "easeIn" }}
-                  className="w-[100rem] h-[64rem]"
+                  className="w-[100rem] lg:w-full h-[64rem] sm:h-auto"
                 >
                   <Image
                     src={work.image}
@@ -176,14 +178,14 @@ const CaseStudies = () => {
                     priority
                     width={1200}
                     height={1000}
-                    className="w-full h-full"
+                    className="w-full h-full sm:object-contain"
                   />
                 </motion.div>
               </div>
             )
           )}
       </div>
-    </section>
+    </SectionCard>
   );
 };
 
