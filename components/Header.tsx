@@ -6,14 +6,12 @@ import Link from "next/link";
 import appContext from "@/context/appContext";
 import SupportSubComp from "./SolutionsSubComp";
 import { AnimatePresence, motion } from "framer-motion";
-import { useMediaQuery } from "react-responsive";
 import menuIcon from "../assets/menu.svg";
 import { IoMdClose } from "react-icons/io";
 import HeaderNav from "./HeaderNav";
 
 const Header = () => {
   const [menuIsVisible, setMenuIsVisible] = useState<boolean>(false);
-  const isMobileView = useMediaQuery({ query: "(max-width: 850px)" });
 
   const ctx = useContext(appContext);
 

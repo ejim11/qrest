@@ -48,7 +48,6 @@ const MissionAndPurpose = () => {
               i % 2 === 0 ? "order-2 " : "order-1 mr-[5rem] smd:mr-0"
             }`}
           >
-            ]
             <motion.h3
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
