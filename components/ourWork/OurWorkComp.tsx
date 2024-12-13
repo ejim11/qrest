@@ -10,7 +10,7 @@ const OurWorkComp = () => {
   }, []);
   return (
     <main>
-      <FirstSection bg="bg-about-1">
+      <FirstSection bg="bg-about-1 sm:bg-our-work-1">
         <div className="py-[15rem] w-[60%] xlg:w-[70%] lg:w-[90%] xmd:w-full text-center sm:flex-1 sm:items-center sm:justify-center sm:flex sm:flex-col">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
