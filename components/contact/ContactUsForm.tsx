@@ -86,10 +86,10 @@ const ContactUsForm = () => {
       initial={{ opacity: 0, x: 40 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.3, ease: "easeIn" }}
-      className="w-[70rem] bg-[#0E0A1D] border border-[#1D2134] rounded-[1.6rem] px-[3.2rem] py-[4.7rem]"
+      className="w-[70rem] lg:mt-[4.5rem] lg:w-[80%] xmd:w-[90%] md:w-full bg-[#0E0A1D] border border-[#1D2134] rounded-[1.6rem] px-[3.2rem] sm:px-[2rem] py-[4.7rem]"
     >
       <form onSubmit={handleSubmit(onSubmit)}>
-        <div className="w-full flex justify-between">
+        <div className="w-full flex smd:flex-col justify-between">
           <InputComponent
             placeholder={"Enter your firstname"}
             type={"text"}
@@ -98,7 +98,7 @@ const ContactUsForm = () => {
             name={"firstName"}
             label="First Name"
             pl="pl-[1.5rem]"
-            containerWidth="w-[48%]"
+            containerWidth="w-[48%] smd:w-full"
             validation={registrationOption.firstName}
             autoFocus={true}
           />
@@ -110,7 +110,7 @@ const ContactUsForm = () => {
             name={"lastName"}
             label="Last Name"
             pl="pl-[1.5rem]"
-            containerWidth="w-[48%]"
+            containerWidth="w-[48%] smd:w-full"
             validation={registrationOption.lastName}
           />
         </div>
@@ -139,7 +139,7 @@ const ContactUsForm = () => {
         <div className="flex flex-col w-full">
           <label className="mb-[0.5rem] text-white-1">Message</label>
           <textarea
-            rows={6}
+            rows={8}
             maxLength={150}
             required
             value={message}
@@ -153,7 +153,7 @@ const ContactUsForm = () => {
         </div>
         <button
           type="submit"
-          className="mt-[5rem] flex items-center justify-center mx-auto py-[1.6rem] px-[4.6rem] text-center  font-medium rounded-[0.8rem]  uppercase bg-purple-2 w-auto hover:bg-purple-1 ease-in transition-all duration-150 text-white-1 font-dmsans"
+          className="mt-[5rem] smd:w-full flex items-center justify-center mx-auto py-[1.6rem] px-[4.6rem] text-center  font-medium rounded-[0.8rem]  uppercase bg-purple-2 w-auto hover:bg-purple-1 ease-in transition-all duration-150 text-white-1 font-dmsans"
         >
           {loading ? (
             <FallingLines color="#ffffff" width="30" visible={true} />

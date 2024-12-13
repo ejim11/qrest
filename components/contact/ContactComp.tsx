@@ -11,14 +11,14 @@ const ContactComp = () => {
   }, []);
   return (
     <main>
-      <FirstSection bg="bg-contact-1">
-        <div className="w-full flex items-center">
-          <div className="flex-1 mr-[5rem]">
+      <FirstSection bg="bg-contact-1 sm:bg-contact-2 sm:pb-[8rem]">
+        <div className="w-full flex items-center lg:flex-col ">
+          <div className="flex-1 mr-[5rem] xlg:mr-[2rem] lg:mr-0 ">
             <motion.h3
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, ease: "easeIn" }}
-              className="text-[10rem] font-inter font-semibold leading-[9.8rem] -tracking-[0.5rem] text-white-1 mb-[2.4rem]"
+              className="text-[10rem] xlg:text-[8rem] md:text-[6rem] md:leading-[6rem] smd:leading-[4.6rem] smd:-tracking-[0.1rem] smd:text-[5rem] font-inter lg:text-center font-semibold leading-[9.8rem] -tracking-[0.5rem] text-white-1 mb-[2.4rem]"
             >
               Talk To Our Expert
             </motion.h3>
@@ -26,7 +26,7 @@ const ContactComp = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, ease: "easeIn", delay: 0.2 }}
-              className="font-dmsans text-[2.4rem] leading-[3.4rem] text-white-2"
+              className="font-dmsans lg:text-center text-[2.4rem] sm:text-[1.8rem] sm:leading-[2.6rem]  leading-[3.4rem] text-white-2"
             >
               Have questions? Contact us today to evaluate and discuss your
               business needs.

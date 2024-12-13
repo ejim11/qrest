@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import React from "react";
+import SectionCard from "../SectionCard";
 
 const ContactList = () => {
   const data = [
@@ -25,8 +26,8 @@ const ContactList = () => {
   ];
 
   return (
-    <section className="px-[9rem] pt-[5rem] pb-[14rem] bg-black-1">
-      <div className="grid grid-cols-service-grid gap-[7rem]">
+    <SectionCard styles=" pt-[5rem] pb-[14rem]  smd:pb-[8rem] md:pb-[12rem]  bg-black-1">
+      <div className="grid grid-cols-service-grid gap-[7rem] xmd:gap-[5rem] md:gap-[3rem]">
         {data.map((contact, i) => (
           <motion.div
             initial={{ opacity: 0, y: 40, x: i % 2 !== 0 ? 40 : -40 }}
@@ -40,7 +41,7 @@ const ContactList = () => {
               {contact.title}
             </p>
             {contact.text && (
-              <div className="font-dmsans text-grey-2">
+              <div className="font-dmsans sm:text-[1.5rem] sm:leading-[2.2rem]  text-grey-2">
                 <p className="mb-[1.2rem]">{contact.text}</p>
                 <p>{contact.text2}</p>
               </div>
@@ -53,7 +54,7 @@ const ContactList = () => {
                     target="blank"
                     key={i}
                     href={link.link}
-                    className="block mb-[1.2rem] last:mb-0 hover:text-purple-3 ease-in transition-all duration-150"
+                    className="block mb-[1.2rem] sm:text-[1.5rem] sm:leading-[2.2rem] last:mb-0 hover:text-purple-3 ease-in transition-all duration-150"
                   >
                     {link.linkText}
                   </a>
@@ -62,7 +63,7 @@ const ContactList = () => {
           </motion.div>
         ))}
       </div>
-    </section>
+    </SectionCard>
   );
 };
 
