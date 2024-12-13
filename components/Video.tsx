@@ -7,6 +7,7 @@ export default function Page() {
       autoPlay
       muted
       loop
+      playsInline
     >
       <source src="home.mp4" type="video/mp4" />
     </video>
