@@ -100,7 +100,7 @@ const ContactUsForm = () => {
             pl="pl-[1.5rem]"
             containerWidth="w-[48%] smd:w-full"
             validation={registrationOption.firstName}
-            autoFocus={true}
+            // autoFocus={true}
           />
           <InputComponent
             placeholder={"Enter your lastname"}
