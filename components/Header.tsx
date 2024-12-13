@@ -63,7 +63,6 @@ const Header = () => {
       <AnimatePresence>
         {menuIsVisible && (
           <motion.div
-            layout
             initial={{
               opacity: 0,
               // height: isMobileView ? 0 : undefined,
