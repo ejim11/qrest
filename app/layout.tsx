@@ -41,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${dmSans.variable} `}>
-      <body>
+      <body className="overflow-x-hidden">
         <AppContextProvider>
           <Header />
           {children}
