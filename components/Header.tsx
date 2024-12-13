@@ -17,10 +17,14 @@ const Header = () => {
 
   const ctx = useContext(appContext);
 
+  const toggleMenuIsVisible = () => {
+    setMenuIsVisible((prevState) => !prevState);
+  };
+
   const navLinks = [
     {
       text: "Solutions",
-      subComponent: <SupportSubComp />,
+      subComponent: <SupportSubComp onClick={toggleMenuIsVisible} />,
     },
     {
       link: "/about-us",
@@ -39,10 +43,6 @@ const Header = () => {
       text: "Contact",
     },
   ];
-
-  const toggleMenuIsVisible = () => {
-    setMenuIsVisible((prevState) => !prevState);
-  };
 
   return (
     <header
@@ -84,10 +84,9 @@ const Header = () => {
           >
             <div className="absolute top-0 left-0 bottom-0 right-0  backdrop-blur-[0.5rem] z-[50]"></div>
             <div
-              onClick={toggleMenuIsVisible}
               className={` flex-1 z-[90] items-center md:flex-col md:bg-black-1  md:items-start md:h-auto md:p-[2rem]`}
             >
-              <HeaderNav navLinks={navLinks} />
+              <HeaderNav navLinks={navLinks} onClick={toggleMenuIsVisible} />
               <motion.button
                 initial={{ opacity: isMobileView ? 0 : undefined }}
                 animate={{ opacity: isMobileView ? 1 : undefined }}
