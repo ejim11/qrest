@@ -91,7 +91,7 @@ const ContactUsForm = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="w-full flex smd:flex-col justify-between">
           <InputComponent
-            placeholder={"Enter your firstname"}
+            placeholder={"Enter your first name"}
             type={"text"}
             register={register}
             error={errors}
@@ -103,7 +103,7 @@ const ContactUsForm = () => {
             // autoFocus={true}
           />
           <InputComponent
-            placeholder={"Enter your lastname"}
+            placeholder={"Enter your last name"}
             type={"text"}
             register={register}
             error={errors}
