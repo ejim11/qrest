@@ -83,6 +83,8 @@ export default {
           "linear-gradient(to bottom, rgba(0,0,0,1) 4%, rgba(0,0,0,0.6) 32%, rgba(85,0,224,0.8) 53%,  rgba(0,0,0,1) 74%), url('../assets/home/bg-1.svg')",
         "about-1":
           "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 24%, rgba(85,0,224,0.8) 42%,  rgba(0,0,0,1) 66%), url('../assets/home/bg-1.svg')",
+        "about-2":
+          "linear-gradient(to bottom, rgba(0,0,0,1) 4%, rgba(0,0,0,0.6) 17%, rgba(85,0,224,0.8) 50%,  rgba(0,0,0,1) 75%), url('../assets/home/bg-1.svg')",
         "contact-1":
           "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6) 16%, rgba(85,0,224,0.8) 52%,  rgba(0,0,0,1) 74%), url('../assets/home/bg-1.svg')",
       },
