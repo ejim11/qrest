@@ -72,7 +72,7 @@ const ExploreServices = () => {
               transition={{ duration: 0.3, ease: "easeIn", delay: i * 0.2 }}
               viewport={{ once: true }}
               key={i}
-              className="w-full border border-black-4 bg-gradient-to-b from-[#101010] to-black-1 to-55% xlg:p-[2rem] px-[3.2rem] py-[3.4rem]"
+              className="w-full border border-black-4 bg-gradient-to-b from-[#101010] to-black-1 to-55% xlg:p-[2rem] px-[3.2rem] py-[3.4rem] flex flex-col"
             >
               <Image
                 src={service.icon}
@@ -82,20 +82,22 @@ const ExploreServices = () => {
                 height={150}
                 className="w-[7.8rem] h-[7.8rem] mr-[2rem] mb-[10rem]"
               />
-              <div className="font-dmsans">
+              <div className="font-dmsans flex-1  flex flex-col justify-end">
                 <p className="text-white-1 text-[2.6rem] font-medium leading-[3.2rem]">
                   {service.title}
                 </p>
-                <p className="text-grey-7 leading-[2.3rem] sm:text-[1.5rem] mt-[1.2rem]">
+                <p className="text-grey-7 leading-[2.3rem] sm:text-[1.5rem] mt-[1.2rem] mb-[2.2rem]">
                   {service.text}
                 </p>
-                <Link
-                  href={service.link}
-                  className="text-purple-3 mt-[2.2rem] sm:text-[1.5rem] flex items-center"
-                >
-                  <span> Learn more</span>
-                  <IoIosArrowRoundForward className="text-current w-[2rem] h-[2rem] ml-[0.5rem]" />
-                </Link>
+                <div className="mt-auto ">
+                  <Link
+                    href={service.link}
+                    className="text-purple-3   sm:text-[1.5rem] flex items-center "
+                  >
+                    <span> Learn more</span>
+                    <IoIosArrowRoundForward className="text-current w-[2rem] h-[2rem] ml-[0.5rem]" />
+                  </Link>
+                </div>
               </div>
             </motion.div>
           )
