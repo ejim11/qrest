@@ -12,7 +12,7 @@ export const pastProjectsData: {
 }[] = [
   {
     image: pastProject1,
-    title: "project 1",
+    title: "Qwikserve",
     text: "branding",
   },
   {
