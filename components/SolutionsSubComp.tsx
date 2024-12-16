@@ -91,7 +91,7 @@ const SolutionsSubComp = ({ onClick }: { onClick: any }) => {
             onMouseLeave={() => {
               setIsMouseOver(null);
             }}
-            className="flex px-[1.4rem] py-[1.5rem] rounded-[0.6rem]   hover:bg-purple-4 "
+            className="flex px-[1.4rem]   py-[1.5rem] rounded-[0.6rem]   hover:bg-purple-4 "
           >
             <Image
               src={item.icon}
@@ -99,9 +99,9 @@ const SolutionsSubComp = ({ onClick }: { onClick: any }) => {
               priority
               width={50}
               height={50}
-              className="w-[2.8rem] h-[2.8rem] mr-[2rem] smd:hidden"
+              className="w-[2.8rem] h-[2.8rem] mr-[2rem] md:hidden"
             />
-            <div className="flex flex-col md:items-center md:text-center  text-left font-dmsans ">
+            <div className="flex flex-col md:items-center md:text-center md:w-full  text-left font-dmsans ">
               <p
                 className={`${
                   isMouseOver === i
