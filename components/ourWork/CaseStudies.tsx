@@ -14,7 +14,7 @@ const CaseStudies = () => {
   const filters = [
     "digital branding",
     "software development",
-    "ui/ux design",
+    "UI/UX design",
     "web design",
     "digital marketing",
     "frontend development",
@@ -24,7 +24,7 @@ const CaseStudies = () => {
     "mobile development",
     "social media management",
     "graphics design",
-    "videography",
+    "video Editing",
   ];
 
   return (
@@ -157,6 +157,7 @@ const CaseStudies = () => {
                 >
                   <Link
                     href={work.link}
+                    target="blank"
                     className={` smd:justify-between flex items-center text-white-1 font-inter bg-purple-2  rounded-[0.6rem] px-[2.8rem] py-[1.4rem]  `}
                   >
                     <span className="font-medium capitalize font-inter ">

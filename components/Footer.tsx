@@ -28,10 +28,20 @@ const Footer = () => {
     {
       title: "contact",
       links: [
-        { link: "", text: "+2341-234-5678" },
-        { link: "", text: "website@qrest.ng" },
-        { link: "", text: "Socials 1" },
-        { link: "", text: "Socials 2" },
+        { link: "", text: "+2348107171280" },
+        {
+          link: "mailto:Qrestcompany@gmail.com",
+          text: "Qrestcompany@gmail.com",
+        },
+        {
+          link: "https://www.linkedin.com/company/qrest-software-development-company/posts/?feedView=all",
+          text: "Linkedin",
+        },
+        {
+          link: "https://www.instagram.com/qrest_software_development?igsh=MTZxZjBtNjgxamh3dg==",
+          text: "Instagram",
+        },
+        { link: "", text: "Facebook" },
       ],
     },
   ];
@@ -65,6 +75,7 @@ const Footer = () => {
                   <li key={x} className="mb-[1.6rem] last:mb-0">
                     <Link
                       href={linkObj.link}
+                      target="blank"
                       className="text-grey-2 leading-[2.4rem] hover:text-purple-4 transition-all ease-in duration-150"
                     >
                       {linkObj.text}
