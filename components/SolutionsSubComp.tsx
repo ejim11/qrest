@@ -46,22 +46,22 @@ const SolutionsSubComp = ({ onClick }: { onClick: any }) => {
     <motion.ul
       layout
       initial={{
-        opacity: isMobileView ? undefined : 0,
+        opacity: 0,
         y: isMobileView ? undefined : -40,
         height: isMobileView ? 0 : undefined,
       }}
       animate={{
-        opacity: isMobileView ? undefined : 1,
+        opacity: 1,
         y: isMobileView ? undefined : 0,
-        height: isMobileView ? "100%" : undefined,
+        height: isMobileView ? "auto" : undefined,
       }}
       exit={{
-        opacity: isMobileView ? undefined : 0,
+        opacity: 0,
         y: isMobileView ? undefined : -40,
         height: isMobileView ? 0 : undefined,
         transition: {
           delay: isMobileView ? undefined : 0.15,
-          ease: isMobileView ? "easeIn" : undefined,
+          ease: "easeIn",
         },
       }}
       className="absolute z-[90] md:relative md:top-0 md:left-0 md:right-0 md:bottom-0 top-[7.2rem] bg-white-1 w-[43.4rem] px-[1rem] py-[1rem]  rounded-[0.6rem] md:bg-black-1  text-black-1 shadow-2xl md:mt-[1.5rem] md:w-full "
@@ -70,15 +70,19 @@ const SolutionsSubComp = ({ onClick }: { onClick: any }) => {
         (item: { title: string; text: string; icon: StaticImageData }, i) => (
           <motion.li
             onClick={onClick}
-            initial={{ opacity: 0, y: 20, x: 20 }}
-            whileInView={{ opacity: 1, y: 0, x: 0 }}
-            viewport={{ once: true }}
-            transition={{
-              delay: (i + 1) * 0.1,
-              type: "spring",
-              stiffness: 200,
-              damping: 24,
-            }}
+            initial={isMobileView ? undefined : { opacity: 0, y: 20, x: 20 }}
+            whileInView={isMobileView ? undefined : { opacity: 1, y: 0, x: 0 }}
+            viewport={isMobileView ? undefined : { once: true }}
+            transition={
+              isMobileView
+                ? undefined
+                : {
+                    delay: (i + 1) * 0.1,
+                    type: "spring",
+                    stiffness: 200,
+                    damping: 24,
+                  }
+            }
             // variants={itemVariants}
             key={i}
             onMouseOver={() => {

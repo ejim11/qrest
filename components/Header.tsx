@@ -103,9 +103,12 @@ const Header = () => {
           className={` flex-1 flex items-center  md:flex-col md:bg-black-1  md:items-start md:h-auto md:p-[2rem]`}
         >
           <HeaderNav navLinks={navLinks} />
-          <button className="bg-pink-1 text-white-1 py-[1.25rem] md:mt-[1.5rem] px-[2.6rem] rounded-[0.6rem]">
+          <Link
+            href={"/contact"}
+            className="bg-pink-1 text-white-1 py-[1.25rem] md:mt-[1.5rem] px-[2.6rem] rounded-[0.6rem]"
+          >
             Book a service
-          </button>
+          </Link>
         </div>
       </div>
       {!menuIsVisible ? (
