@@ -7,14 +7,16 @@ const ClientFeedbackItem = ({
   title,
   text,
   clientName,
+  position,
 }: {
   title: string;
   text: string;
   clientName: string;
+  position: string;
 }) => {
   return (
-    <div className="pr-[2.8rem] smd:pr-0">
-      <div className="bg-white-1 shadow-[0_0_43.8px_0px_rgba(0,0,0,0.05)] px-[2.6rem] py-[2.9rem]  rounded-[1.6rem] ">
+    <div className="pr-[2.8rem] smd:pr-0 w-full ">
+      <div className="bg-white-1 w-full h-[33rem]  shadow-[0_0_43.8px_0px_rgba(0,0,0,0.05)] px-[2.6rem] py-[2.9rem]  rounded-[1.6rem] ">
         <Image
           src={quoteImg}
           alt="quote icon"
@@ -35,7 +37,7 @@ const ClientFeedbackItem = ({
         <div className="font-dmsans">
           <p className="text-[1.8rem] font-medium text-black-1">{clientName}</p>
           <p className="uppercase text-[1.2rem] mt-[0.4rem] font-bold text-grey-3">
-            position in the company
+            {position}
           </p>
         </div>
       </div>
