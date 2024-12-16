@@ -13,11 +13,10 @@ import MasterYourCraft from "./MasterYourCraft";
 import ContactUs from "./ContactUs";
 import Video from "../Video";
 import HeaderText from "../HeaderText";
+import { useRouter } from "next/navigation";
 
 const HomeComp = () => {
-  useEffect(() => {
-    window.scrollTo({ top: -90, behavior: "smooth" });
-  }, []);
+  const router = useRouter();
 
   const projectsSlideResponsive = [
     {
@@ -66,6 +65,10 @@ const HomeComp = () => {
     },
   ];
 
+  useEffect(() => {
+    window.scrollTo({ top: -90, behavior: "smooth" });
+  }, []);
+
   return (
     <main>
       <FirstSection bg="bg-home-1 sm:bg-home-2">
@@ -84,10 +87,14 @@ const HomeComp = () => {
           transition={{ duration: 0.3, ease: "easeIn", delay: 0.3 }}
           className="mt-[2.4rem] text-[2.4rem] smd:text-[1.78rem] text-white-2 w-[55%] xlg:w-[70%] lg:w-[90%] xmd:w-full font-dmsans leading-[3.4rem] text-center mb-[3.6rem] sm:leading-[2.6rem]"
         >
-          Bring all your projects together, create a portfolio that dazzles, and
-          ensure your brand stays relevant and impressive.
+          Bring all your business ideas, products, projects, Let’s create
+          digital masterpieces that dazzle, and ensure your brand stays relevant
+          and impressive.
         </motion.p>
         <Button
+          onClick={() => {
+            router.push("/contact");
+          }}
           text="Book a free call"
           styles="mb-[10rem] py-[1.6rem] px-[2rem] smd:text-[1.78rem] smd:mb-[4.5rem] smd:w-full smd:justify-between"
         />
@@ -113,11 +120,12 @@ const HomeComp = () => {
               text=" Our Past Projects"
               styles="text-black-2 font-inter "
               paragraphStyle="text-grey-1  mb-[3.2rem] smd:mb-[2rem] "
-              paragraph="From innovative designs to impactful projects, our gallery
-              highlights the diverse and impressive work created using
-              WorkGallery"
+              paragraph="From innovative designs to impactful projects development, our gallery highlights the diverse and impressive works we’ve done for brands"
             />
             <Button
+              onClick={() => {
+                router.push("/our-work");
+              }}
               text={"View all"}
               styles="px-[4rem] py-[1.4rem] smd:text-[2rem] smd:w-full smd:justify-between "
             />
@@ -137,8 +145,7 @@ const HomeComp = () => {
               text="Hear from our clients"
               styles="text-black-2 font-inter "
               paragraphStyle="text-grey-1  mb-[3.2rem] smd:mb-[2rem] "
-              paragraph=" FLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolo."
+              paragraph="We value the feedback of those we work with. Our partners have experienced firsthand the impact of our results-driven approach"
             />
           </div>
         }
