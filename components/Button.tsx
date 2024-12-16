@@ -1,11 +1,21 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import { motion } from "framer-motion";
 import React from "react";
 import { RiArrowRightUpLine } from "react-icons/ri";
 
-const Button = ({ text, styles }: { text: string; styles: string }) => {
+const Button = ({
+  text,
+  styles,
+  onClick,
+}: {
+  text: string;
+  styles: string;
+  onClick?: any;
+}) => {
   return (
     <motion.button
+      onClick={onClick}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, ease: "easeIn", delay: 0.5 }}
