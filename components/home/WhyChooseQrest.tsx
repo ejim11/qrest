@@ -18,8 +18,7 @@ const WhyChooseQrest = () => {
   }[] = [
     {
       title: "Tailored Solutions",
-      text: `We understand that every business is unique. 
-That’s why we offer customized branding, web design, and digital marketing strategies designed to fit your specific goals and audience.`,
+      text: `Precision-crafted digital solutions that capture your brand's essence and connect meaningfully with your target audience.`,
       icon: scissorsIcon,
     },
     {
@@ -29,8 +28,7 @@ That’s why we offer customized branding, web design, and digital marketing str
     },
     {
       title: "Results-Driven",
-      text: `We understand that every business is unique. 
-  That’s why we offer customized branding, web design, and digital marketing strategies designed to fit your specific goals and audience.`,
+      text: `We believe in results that speak for themselves. Our dedicated team is laser-focused on delivering measurable outcomes for your brand.`,
       icon: dbIcon,
     },
     {

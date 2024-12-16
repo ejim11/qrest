@@ -50,8 +50,7 @@ const ExploreServices = () => {
         <HeaderText
           text=" Explore our main services"
           styles="text-white-1 font-inter "
-          paragraph="  Bring all your projects together, create a portfolio that dazzles, and
-          ensure your brand stays relevant and impressive."
+          paragraph="Bring all your business ideas, products, projects, Let’s create digital masterpieces that dazzle, and ensure your brand stays relevant and impressive."
           paragraphStyle="text-white-2  mb-[8rem] smd:mb-[4rem] "
         />
       </div>

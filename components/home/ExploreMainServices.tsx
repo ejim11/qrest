@@ -16,13 +16,13 @@ const ExploreMainServices = () => {
     {
       image: service1Img,
       title: "Website and Application design",
-      text: "At Qrest, we leverage the latest tools and technologies to create innovative digital experiences that give you a competitive edge in the market.",
+      text: "At Qrest, we specialize in creating stunning websites and applications that not only look great but also provide exceptional user experiences. Our design process is all about understanding your needs and your audience, ensuring that every element serves a purpose.",
     },
 
     {
       image: service2Img,
       title: `Website and Application development`,
-      text: `At Qrest, we leverage the latest tools and technologies to create innovative digital experiences that give you a competitive edge in the market.`,
+      text: `At Qrest, we take pride in our website and application development services that are tailored to meet your unique needs. Our skilled developers use the latest technologies and best practices to build robust, scalable, and high-performing digital solutions.`,
     },
   ];
 
@@ -32,8 +32,7 @@ const ExploreMainServices = () => {
         <HeaderText
           text="Explore our main services"
           styles="text-black-2 font-inter "
-          paragraph=" Bring all your projects together, create a portfolio that dazzles, and
-          ensure your brand stays relevant and impressive."
+          paragraph="Bring all your business ideas, products, projects, Let’s create digital masterpieces that dazzle, and ensure your brand stays relevant and impressive."
           paragraphStyle="text-grey-1"
         />
       </div>
