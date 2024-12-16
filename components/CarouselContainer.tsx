@@ -98,13 +98,14 @@ const CarouselContainer = ({
           </Slider>
         )}
         {title === "clients" && (
-          <Slider {...settings}>
+          <Slider {...settings} className="">
             {list.map((client: any, i: number) => (
               <ClientFeedbackItem
                 key={i}
                 title={client.title}
                 text={client.text}
                 clientName={client.clientName}
+                position={client.position}
               />
             ))}
           </Slider>
