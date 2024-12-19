@@ -45,6 +45,13 @@ html {
   }
 }
 
+@media all and (max-width: 370px) {
+  html {
+    /* 1rem = 9px */
+    font-size: 50%;
+  }
+}
+
 body {
   font-size: 1.6rem;
   overflow-x: hidden !important;
