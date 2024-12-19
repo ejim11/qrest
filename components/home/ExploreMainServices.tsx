@@ -16,7 +16,7 @@ const ExploreMainServices = () => {
     {
       image: service1Img,
       title: "Website and Application design",
-      text: "At Qrest, we specialize in creating stunning websites and applications that not only look great but also provide exceptional user experiences. Our design process is all about understanding your needs and your audience, ensuring that every element serves a purpose.",
+      text: "At Qrest, we specialize in creating stunning websites and applications that look great and also provide exceptional user experiences. Our design process is all about understanding your needs and your audience, ensuring that every element serves a purpose.",
     },
 
     {
