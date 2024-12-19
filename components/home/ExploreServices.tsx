@@ -90,10 +90,10 @@ const ExploreServices = () => {
                 </p>
                 <div className="mt-auto ">
                   <Link
-                    href={service.link}
+                    href={"https://wa.me/message/4OAX5LZZIWQEH1"}
                     className="text-purple-3   sm:text-[1.5rem] flex items-center "
                   >
-                    <span> Learn more</span>
+                    <span>Book service</span>
                     <IoIosArrowRoundForward className="text-current w-[2rem] h-[2rem] ml-[0.5rem]" />
                   </Link>
                 </div>
