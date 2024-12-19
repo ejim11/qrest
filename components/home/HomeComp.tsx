@@ -14,6 +14,8 @@ import ContactUs from "./ContactUs";
 import Video from "../Video";
 import HeaderText from "../HeaderText";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { RiArrowRightUpLine } from "react-icons/ri";
 
 const HomeComp = () => {
   const router = useRouter();
@@ -91,13 +93,13 @@ const HomeComp = () => {
           digital masterpieces that dazzle, and ensure your brand stays relevant
           and impressive.
         </motion.p>
-        <Button
-          onClick={() => {
-            router.push("/contact");
-          }}
-          text="Book a free call"
-          styles="mb-[10rem] py-[1.6rem] px-[2rem] smd:text-[1.78rem] smd:mb-[4.5rem] smd:w-full smd:justify-between"
-        />
+        <Link
+          href={"https://wa.me/message/4OAX5LZZIWQEH1"}
+          className="flex sm:text-[1.5rem] items-center text-white-1 font-inter bg-purple-2  rounded-[0.6rem]  mb-[10rem] py-[1.6rem] px-[2rem] smd:text-[1.78rem] smd:mb-[4.5rem] smd:w-full smd:justify-between"
+        >
+          <span>Book a free call</span>
+          <RiArrowRightUpLine className="text-current w-[2rem] h-[2rem] ml-[2rem]" />
+        </Link>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
