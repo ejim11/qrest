@@ -40,7 +40,7 @@ const CareerComp = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4, ease: "easeIn", delay: 0.1 }}
-            className="rounded-[1.6rem] overflow-hidden w-[64.8rem] xlg:w-[55%] smd:w-full smd:mt-[4.5rem] h-[54rem]"
+            className="rounded-[1.6rem] overflow-hidden w-[64.8rem] sm:h-auto xlg:w-[55%] smd:w-full smd:mt-[4.5rem] h-[54rem]"
           >
             <Image
               src={jobImg}
