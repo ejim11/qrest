@@ -23,22 +23,22 @@ const MasterYourCraft = () => {
       image: master1Img,
       title: "Career",
       text: "Your journey toward a fulfilling and impactful career starts here.",
-      link: "",
+      link: "/career",
       linkText: "view jobs",
     },
     {
       image: master2Img,
       title: "About us",
-      text: "Dive into our extensive library of articles, guides, and tutorials.",
-      link: "",
-      linkText: "Read more",
+      text: "Qrest delivers rapid business solutions to boost enterprise success and efficiency.",
+      link: "https://wa.me/message/4OAX5LZZIWQEH1",
+      linkText: "Contact us",
     },
     {
       image: master3Img,
       title: "Digital Marketing",
       text: "get hands-on with our step-by-step tutorials and how-to guides.",
-      link: "",
-      linkText: "Read more",
+      link: "https://wa.me/message/4OAX5LZZIWQEH1",
+      linkText: "Contact us",
     },
   ];
 
@@ -95,6 +95,7 @@ const MasterYourCraft = () => {
                     </p>
                     <Link
                       href={data.link}
+                      target={data.linkText === "Contact us" ? "blank" : ""}
                       className="flex items-center text-white-1 text-[1.4rem] leading-[2.3rem] font-dmsans font-medium capitalize mt-[1rem] hover:text-purple-4 transition-all duration-150 ease-in"
                     >
                       <span>{data.linkText}</span>
