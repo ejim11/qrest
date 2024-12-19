@@ -33,21 +33,6 @@ export const works: {
     slug: "qwikserve",
   },
   {
-    title: "Elysium Surrogacy",
-    text: "We developed a sleek, responsive website with a modernized brand identity that catered to a global audience. Our team integrated seamless payment solutions, optimized product pages for search engines, and ensured mobile responsiveness for improved accessibility.",
-    link: "https://www.instagram.com/elysiansurrogacy_?igsh=MTJpdWFuYTY5NWs5dA==",
-    image: elysiumImg,
-    tags: [
-      "UI/UX Design",
-      "Frontend Development",
-      "web development",
-      "web design",
-    ],
-    year: "2023",
-    linkText: "visit website",
-    slug: "elysium",
-  },
-  {
     title: "Onu Uto",
     text: "Summerville is a premium real estate development company that focuses on creating luxury living spaces that blend comfort, sustainability, and elegance. The goal of this project is to develop a compelling brand identity that reflects Summerville’s commitment to high-quality living experiences, sophisticated design, and environmentally conscious building practices",
     link: "https://www.instagram.com/onu_uto1?igsh=bDBrZ3BhdjQzNnVh",
@@ -121,5 +106,20 @@ export const works: {
     year: "2024",
     linkText: "visit website",
     slug: "tickethive",
+  },
+  {
+    title: "Elysium Surrogacy",
+    text: "We developed a sleek, responsive website with a modernized brand identity that catered to a global audience. Our team integrated seamless payment solutions, optimized product pages for search engines, and ensured mobile responsiveness for improved accessibility.",
+    link: "https://www.instagram.com/elysiansurrogacy_?igsh=MTJpdWFuYTY5NWs5dA==",
+    image: elysiumImg,
+    tags: [
+      "UI/UX Design",
+      "Frontend Development",
+      "web development",
+      "web design",
+    ],
+    year: "2024",
+    linkText: "visit website",
+    slug: "elysium",
   },
 ];
