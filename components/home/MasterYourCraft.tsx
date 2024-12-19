@@ -36,7 +36,7 @@ const MasterYourCraft = () => {
     {
       image: master3Img,
       title: "Digital Marketing",
-      text: "get hands-on with our step-by-step tutorials and how-to guides.",
+      text: "Get marketing strategies and solutions that drive results and elevate your brand.",
       link: "https://wa.me/message/4OAX5LZZIWQEH1",
       linkText: "Contact us",
     },
