@@ -46,7 +46,9 @@ const Header = () => {
     <header
       className={` h-[7rem] w-full flex items-center px-[9rem] 2xl:px-[5rem] xlg:px-[3rem] smd:px-[2rem] transition-all ease-in duration-150  ${
         ctx.isHeaderSticky
-          ? "fixed top-0 z-40 bg-blue-1 showHeader"
+          ? `fixed top-0 z-40 ${
+              menuIsVisible ? "bg-black-1" : "bg-blue-1"
+            } showHeader`
           : "relative bg-black-1"
       }`}
     >
@@ -84,14 +86,16 @@ const Header = () => {
               className={` flex-1 z-[120] items-center md:flex-col md:bg-black-1  md:items-start md:h-auto md:p-[2rem]`}
             >
               <HeaderNav navLinks={navLinks} onClick={toggleMenuIsVisible} />
-              <motion.button
-                // initial={{ opacity: isMobileView ? 0 : undefined }}
-                // animate={{ opacity: isMobileView ? 1 : undefined }}
-                // transition={{ delay: isMobileView ? 0.01 : undefined }}
-                className="bg-pink-1 text-white-1 py-[1.8rem] md:mt-[1.5rem] mb-[1.5rem] px-[2.6rem] md:w-full rounded-[0.6rem]"
+              <Link
+                onClick={() => {
+                  setMenuIsVisible(false);
+                }}
+                href={"https://wa.me/message/4OAX5LZZIWQEH1"}
+                target="blank"
+                className="bg-pink-1 block text-center text-white-1 py-[1.8rem] md:mt-[1.5rem] mb-[1.5rem] px-[2.6rem] md:w-full rounded-[0.6rem]"
               >
                 Book a service
-              </motion.button>
+              </Link>
             </div>
           </motion.div>
         )}
