@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
-import master1Img from "../../assets/home/master1.png";
-import master2Img from "../../assets/home/master2.png";
-import master3Img from "../../assets/home/master3.png";
+import master1Img from "../../assets/home/master1.jpg";
+import master2Img from "../../assets/home/master2.jpg";
+import master3Img from "../../assets/home/master3.svg";
 import { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -82,7 +82,7 @@ const MasterYourCraft = () => {
                   height={1000}
                   className="w-full h-full object-cover object-top"
                 />
-                <div className="absolute bottom-0 top-0 bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(255,255,255,0.05)] to-[rgba(0,0,0,0.9)] to-[100%] py-[4.5rem] px-[3.2rem] ">
+                <div className="absolute bottom-0 top-0 bg-gradient-to-b from-[rgba(0,0,0,0)] via-[rgba(255,255,255,0.05)] to-[rgba(0,0,0)] to-[100%] py-[4.5rem] px-[3.2rem] ">
                   <div className="z-[20] relative font-dmsans flex justify-end h-full  flex-col">
                     <p
                       className={`
