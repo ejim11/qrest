@@ -104,7 +104,8 @@ const Header = () => {
         >
           <HeaderNav navLinks={navLinks} />
           <Link
-            href={"/contact"}
+            href={"https://wa.me/message/4OAX5LZZIWQEH1"}
+            target="blank"
             className="bg-pink-1 text-white-1 py-[1.25rem] md:mt-[1.5rem] px-[2.6rem] rounded-[0.6rem]"
           >
             Book a service
