@@ -1,11 +1,12 @@
 "use client";
 import React from "react";
-import Button from "../Button";
 import Image from "next/image";
 import contactUsImg from "../../assets/home/contact-us.png";
 import { motion } from "framer-motion";
 import SectionCard from "../SectionCard";
 import HeaderText from "../HeaderText";
+import Link from "next/link";
+import { RiArrowRightUpLine } from "react-icons/ri";
 
 const ContactUs = () => {
   return (
@@ -21,18 +22,15 @@ const ContactUs = () => {
           paragraphStyle=" text-white-3 mb-[3.2rem] md:text-center"
         />
 
-        <Button
-          text={"Contact us"}
-          styles={"py-[1.4rem] px-[2.8rem] smd:w-full smd:justify-between"}
-        />
+        <Link
+          href={"/contact"}
+          className="flex sm:text-[1.5rem] items-center text-white-1 font-inter bg-purple-2  rounded-[0.6rem]  mb-[10rem] py-[1.6rem] px-[2rem] smd:text-[1.78rem] smd:mb-[4.5rem] smd:w-full smd:justify-between w-max"
+        >
+          <span>Contact us</span>
+          <RiArrowRightUpLine className="text-current w-[2rem] h-[2rem] ml-[2rem]" />
+        </Link>
       </div>
-      <motion.div
-        // initial={{ opacity: 0, x: 40 }}
-        // whileInView={{ opacity: 1, x: 0 }}
-        // viewport={{ once: true }}
-        // transition={{ duration: 0.3, ease: "easeIn" }}
-        className="w-[67.3rem] smd:w-full h-[71.6] flex-1"
-      >
+      <motion.div className="w-[67.3rem] smd:w-full h-[71.6] flex-1">
         <Image
           src={contactUsImg}
           alt="contact us image"
