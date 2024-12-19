@@ -100,10 +100,12 @@ const CaseStudies = () => {
                 tags: string[];
                 year: string;
                 linkText: string;
+                slug: string;
               },
               i: number
             ) => (
               <div
+                id={work.slug}
                 key={i}
                 className="flex flex-col items-center mb-[12rem] smd:mb-[10rem] sm:mb-[8rem] w-[80%] lg:w-[90%] xmd:w-full last:mb-0"
               >
