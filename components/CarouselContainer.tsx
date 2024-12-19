@@ -106,6 +106,7 @@ const CarouselContainer = ({
                 text={client.text}
                 clientName={client.clientName}
                 position={client.position}
+                image={client.image}
               />
             ))}
           </Slider>
