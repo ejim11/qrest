@@ -45,7 +45,7 @@ const ExploreServices = () => {
   ];
 
   return (
-    <SectionCard styles="bg-black-1 pt-[4rem] pb-[12rem] smd:pb-[8rem]">
+    <SectionCard styles="bg-black-1 pt-[4rem] pb-[12rem] smd:pb-[8rem] ">
       <div className="w-[50%] xlg:w-[75%] md:w-[90%] xlg:mx-auto xlg:text-center smd:text-left smd:w-full">
         <HeaderText
           text=" Explore our main services"

@@ -27,7 +27,7 @@ const ExploreMainServices = () => {
   ];
 
   return (
-    <SectionCard styles="flex items-center justify-center flex-col pb-[14rem] smd:pb-[8rem] bg-white-1">
+    <SectionCard styles="flex items-center justify-center flex-col pb-[14rem] smd:pb-[8rem] bg-white-1 hide-scroll">
       <div className="w-[55%] xlg:w-[75%] md:w-[90%] smd:w-full  text-center flex items-center justify-center flex-col">
         <HeaderText
           text="Explore our main services"
@@ -37,7 +37,7 @@ const ExploreMainServices = () => {
         />
       </div>
 
-      <div className="w-full flex mt-[7.4rem] smd:mt-[4rem] items-center justify-center xlg:justify-between md:flex-wrap overflow-x-hidden">
+      <div className="w-full flex mt-[7.4rem] smd:mt-[4rem] items-center justify-center xlg:justify-between md:flex-wrap overflow-hidden ">
         {mainServicesData.map(
           (
             service: {
