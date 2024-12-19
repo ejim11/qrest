@@ -35,7 +35,7 @@ const ClientFeedbackItem = ({
         </p>
       </div>
       <div className="flex items-center mt-[1rem]">
-        <div className="w-[4.2rem] h-[4.2rem] rounded-full bg-grey-4 mr-[1rem]">
+        <div className="w-[4.2rem] h-[4.2rem] rounded-full bg-grey-4 mr-[1rem] overflow-hidden">
           <Image
             src={image}
             alt={`${title} image`}
