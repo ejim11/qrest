@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import quoteImg from "../../assets/home/quote-right-svgrepo-com 1.svg";
 
 const ClientFeedbackItem = ({
@@ -8,11 +8,13 @@ const ClientFeedbackItem = ({
   text,
   clientName,
   position,
+  image,
 }: {
   title: string;
   text: string;
   clientName: string;
   position: string;
+  image: StaticImageData;
 }) => {
   return (
     <div className="pr-[2.8rem] smd:pr-0 w-full ">
@@ -33,7 +35,16 @@ const ClientFeedbackItem = ({
         </p>
       </div>
       <div className="flex items-center mt-[1rem]">
-        <div className="w-[4.2rem] h-[4.2rem] rounded-full bg-grey-4 mr-[1rem]"></div>
+        <div className="w-[4.2rem] h-[4.2rem] rounded-full bg-grey-4 mr-[1rem]">
+          <Image
+            src={image}
+            alt={`${title} image`}
+            priority
+            className="w-full h-full"
+            width={50}
+            height={50}
+          />
+        </div>
         <div className="font-dmsans">
           <p className="text-[1.8rem] font-medium text-black-1">{clientName}</p>
           <p className="uppercase text-[1.2rem] mt-[0.4rem] font-bold text-grey-3">
