@@ -28,20 +28,27 @@ const Footer = () => {
     {
       title: "contact",
       links: [
-        { link: "", text: "+2348107171280" },
+        {
+          link: "https://wa.me/message/4OAX5LZZIWQEH1",
+          text: "+2348107171280",
+        },
         {
           link: "mailto:Qrestcompany@gmail.com",
           text: "Qrestcompany@gmail.com",
         },
         {
-          link: "https://www.linkedin.com/company/qrest-software-development-company/posts/?feedView=all",
-          text: "Linkedin",
-        },
-        {
           link: "https://www.instagram.com/qrest_software_development?igsh=MTZxZjBtNjgxamh3dg==",
           text: "Instagram",
         },
-        { link: "", text: "Facebook" },
+        {
+          link: "https://www.linkedin.com/company/qrest-software-development-company/posts/?feedView=all",
+          text: "Linkedin",
+        },
+
+        {
+          link: "https://www.facebook.com/profile.php?id=61552925021943&mibextid=JRoKGi",
+          text: "Facebook",
+        },
       ],
     },
   ];
