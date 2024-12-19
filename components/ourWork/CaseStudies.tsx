@@ -114,7 +114,7 @@ const CaseStudies = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, ease: "easeIn" }}
-                  className="flex items-baseline "
+                  className="flex items-baseline justify-center"
                 >
                   <h2 className="font-inter font-semibold text-[6.4rem] xlg:text-[6rem] xmd:text-[5rem] smd:text-[4rem] smd:-tracking-[0.1rem] smd:leading-[4rem] -tracking-[0.5rem] mr-[1.6rem] text-black-2">
                     {work.title}
