@@ -116,7 +116,7 @@ const CaseStudies = () => {
                   transition={{ duration: 0.3, ease: "easeIn" }}
                   className="flex items-baseline justify-center"
                 >
-                  <h2 className="font-inter font-semibold text-[6.4rem] xlg:text-[6rem] xmd:text-[5rem] smd:text-[4rem] smd:-tracking-[0.1rem] smd:leading-[4rem] -tracking-[0.5rem] mr-[1.6rem] text-black-2">
+                  <h2 className="font-inter font-semibold text-[6.4rem] xlg:text-[6rem] xmd:text-[5rem] smd:text-[4rem] smd:-tracking-[0.1rem] smd:leading-[4rem] -tracking-[0.4rem] mr-[1.6rem] text-black-2">
                     {work.title}
                   </h2>
                   <span className="text-grey-1 font-dmsans leading-[2.9rem] sm:text-[1.5rem] sm:leading-[2.2rem] text-[2rem]">
@@ -160,7 +160,7 @@ const CaseStudies = () => {
                   <Link
                     href={work.link}
                     target="blank"
-                    className={` smd:justify-between flex items-center text-white-1 font-inter bg-purple-2  rounded-[0.6rem] px-[2.8rem] py-[1.4rem]  `}
+                    className={` smd:justify-between flex items-center text-white-1 font-inter bg-purple-2  rounded-[0.6rem] px-[2.8rem] py-[1.4rem] hover:bg-purple-1 transition-all duration-150 ease-in `}
                   >
                     <span className="font-medium capitalize font-inter ">
                       {work.linkText}
