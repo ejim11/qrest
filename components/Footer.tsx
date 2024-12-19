@@ -17,7 +17,7 @@ const Footer = () => {
       ],
     },
     {
-      title: "features",
+      title: "Services",
       links: [
         { link: "", text: "Digital Branding" },
         { link: "", text: "UI/UX Design" },
