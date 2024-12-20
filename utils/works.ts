@@ -24,7 +24,7 @@ export const works: {
     link: "https://qwikserve.ng/",
     image: qwikserveImg,
     tags: [
-      "UIUX Design",
+      "UI/UX Design",
       "Mobile Apps Development",
       "Web development",
       "web design",
@@ -118,12 +118,7 @@ export const works: {
     text: "Transformative Justice and Development Network (TRAJDEN) focuses on promoting education, healthcare, gender equality, and justice, empowering marginalized groups through advocacy, skills development, and reforms.  The goal of this project was to develop a compelling brand identity that reflects TRAJDEN.",
     link: "https://www.instagram.com/traj_den?igsh=azdjd2o4YnBpOGZ1",
     image: trajdenImg,
-    tags: [
-      "digital branding",
-      "social media management",
-      "graphics design",
-      "video Editing",
-    ],
+    tags: ["digital branding", "graphics design"],
     year: "2024",
     linkText: "view instagram",
     slug: "elysium",
