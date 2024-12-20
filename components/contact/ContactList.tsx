@@ -7,8 +7,16 @@ const ContactList = () => {
   const data = [
     {
       title: "Contact",
-      text: "+2341-234-5678",
-      text2: "website@qrest.ng",
+      links: [
+        {
+          link: "https://wa.me/message/4OAX5LZZIWQEH1",
+          linkText: "+2348107171280",
+        },
+        {
+          link: "mailto:Qrestcompany@gmail.com",
+          linkText: "Qrestcompany@gmail.com",
+        },
+      ],
     },
     {
       title: "Socials",
@@ -40,12 +48,7 @@ const ContactList = () => {
             <p className="text-[2.4rem] mb-[2.4rem] font-dmsans font-medium text-white-1">
               {contact.title}
             </p>
-            {contact.text && (
-              <div className="font-dmsans sm:text-[1.5rem] sm:leading-[2.2rem]  text-grey-2">
-                <p className="mb-[1.2rem]">{contact.text}</p>
-                <p>{contact.text2}</p>
-              </div>
-            )}
+
             <div className="text-grey-2 flex flex-col items-center capitalize">
               {contact.links &&
                 contact.links.length > 0 &&
