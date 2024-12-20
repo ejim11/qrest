@@ -88,7 +88,14 @@ const CaseStudies = () => {
             if (choosenFilters.length <= 0) {
               return true;
             }
-            return work.tags.some((tag) => choosenFilters.includes(tag));
+            console.log(choosenFilters.join(",").includes("UI/UX design"));
+            console.log(work.tags);
+            console.log(work.tags.some((tag) => choosenFilters.includes(tag)));
+            return work.tags.some((tag) =>
+              choosenFilters
+                .map((filter) => filter.toLowerCase())
+                .includes(tag.toLowerCase())
+            );
           })
           .map(
             (
