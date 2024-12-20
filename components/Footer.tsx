@@ -82,7 +82,7 @@ const Footer = () => {
                   <li key={x} className="mb-[1.6rem] last:mb-0">
                     <Link
                       href={linkObj.link}
-                      target="blank"
+                      target={link.title === "contact" ? "blank" : ""}
                       className="text-grey-2 leading-[2.4rem] hover:text-purple-4 transition-all ease-in duration-150"
                     >
                       {linkObj.text}
