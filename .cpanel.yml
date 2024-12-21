@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    # Deploy to the public_html directory
+    - export DEPLOYPATH=/home/username/public_html/
+    - /opt/cpanel/ea-nodejs18/bin/npm install
+    - /opt/cpanel/ea-nodejs18/bin/npm run build
+    - /opt/cpanel/ea-nodejs18/bin/npm run start

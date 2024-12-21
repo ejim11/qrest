@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://qrest-qtnj.vercel.app/"),
+  metadataBase: new URL("https://www.qrest.ng/"),
   authors: [{ name: "Ejim Favour," }, { name: "Qrest Company" }],
   title: "Qrest | Contact",
   description:
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     description:
       "Contact Qrest for inquiries, support, or feedback. Our team is ready to assist you today!",
     type: "website",
-    url: "https://qrest-qtnj.vercel.app/contact",
+    url: "https://www.qrest.ng/contact",
     images: [
       { url: "https://i.ibb.co/n3G8MZV/Screenshot-2024-12-11-at-16-39-58.png" },
     ],
