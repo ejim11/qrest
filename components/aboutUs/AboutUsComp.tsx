@@ -14,8 +14,8 @@ const AboutUsComp = () => {
   }, []);
   return (
     <main>
-      <FirstSection bg="bg-about-1 sm:bg-about-2">
-        <div className="pt-[10rem] md:pb-[10rem] sm:flex sm:flex-col sm:justify-center sm:items-center sm:flex-1 pb-[15rem] w-[60%] text-center xl:w-[75%]  lg:w-[90%] xmd:w-full ">
+      <FirstSection bg="bg-main-bg ">
+        <div className="pt-[10rem] md:pb-[10rem] sm:flex sm:flex-col sm:justify-center sm:items-center sm:flex-1 pb-[15rem] w-[70%] text-center xl:w-[75%]  lg:w-[90%] xmd:w-full ">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

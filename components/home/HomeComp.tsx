@@ -73,7 +73,7 @@ const HomeComp = () => {
 
   return (
     <main>
-      <FirstSection bg="bg-home-1 sm:bg-home-2">
+      <FirstSection bg="bg-main-bg">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -87,7 +87,7 @@ const HomeComp = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, ease: "easeIn", delay: 0.3 }}
-          className="mt-[2.4rem] text-[2.4rem] smd:text-[1.78rem] text-white-2 w-[55%] xlg:w-[70%] lg:w-[90%] xmd:w-full font-dmsans leading-[3.4rem] text-center mb-[3.6rem] sm:leading-[2.6rem]"
+          className="mt-[2.4rem] text-[2.4rem] smd:text-[1.78rem] text-white-2 w-[73%] lg:w-[90%] xmd:w-full font-dmsans leading-[3.4rem] text-center mb-[3.6rem] sm:leading-[2.6rem]"
         >
           Bring all your business ideas, products, projects, Let’s create
           digital masterpieces that dazzle, and ensure your brand stays relevant

@@ -11,7 +11,7 @@ const ContactComp = () => {
   }, []);
   return (
     <main>
-      <FirstSection bg="bg-contact-1 sm:bg-contact-2 sm:pb-[8rem]">
+      <FirstSection bg="bg-main-bg sm:pb-[8rem]">
         <div className="w-full flex items-center lg:flex-col ">
           <div className="flex-1 mr-[5rem] xlg:mr-[2rem] lg:mr-0 ">
             <motion.h3
