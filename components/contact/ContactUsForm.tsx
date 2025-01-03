@@ -9,6 +9,7 @@ import { FaRegCircleCheck } from "react-icons/fa6";
 import { LuBadgeAlert } from "react-icons/lu";
 import { FallingLines } from "react-loader-spinner";
 import { motion } from "framer-motion";
+// import { sendMessageToMe } from "@/service/contactMeService";
 
 type FormData = {
   firstName: string;
@@ -38,7 +39,8 @@ const ContactUsForm = () => {
     },
   });
 
-  const onSubmit: SubmitHandler<FormData> = async () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const onSubmit: SubmitHandler<FormData> = async (data) => {
     if (!message) {
       setMsgError("Please enter some message");
       return;
@@ -59,6 +61,8 @@ const ContactUsForm = () => {
     setIsLoading(true);
 
     try {
+      // await sendMessageToMe(modifiedData);
+
       reset({
         firstName: "",
         lastName: "",
