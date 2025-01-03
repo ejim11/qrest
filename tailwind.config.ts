@@ -77,6 +77,7 @@ export default {
     },
     extend: {
       backgroundImage: {
+        "main-bg": "url('../assets/bg.svg')",
         "home-1":
           "linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 24%, rgba(85,0,224,0.8) 42%, rgba(71,0,186,0.6) 47%,  rgba(0,0,0,1) 66%), url('../assets/home/bg-1.svg')",
         "home-2":
