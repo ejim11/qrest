@@ -9,7 +9,7 @@ import { FaRegCircleCheck } from "react-icons/fa6";
 import { LuBadgeAlert } from "react-icons/lu";
 import { FallingLines } from "react-loader-spinner";
 import { motion } from "framer-motion";
-// import { sendMessageToMe } from "@/service/contactMeService";
+import { sendMessageToMe } from "@/service/contactMeService";
 
 type FormData = {
   firstName: string;
@@ -50,18 +50,18 @@ const ContactUsForm = () => {
       return;
     }
 
-    // const modifiedData = {
-    //   firstName: data.firstName,
-    //   lastName: data.lastName,
-    //   company: data.company,
-    //   email: data.email,
-    //   message,
-    // };
+    const modifiedData = {
+      firstName: data.firstName,
+      lastName: data.lastName,
+      company: data.company,
+      email: data.email,
+      message,
+    };
 
     setIsLoading(true);
 
     try {
-      // await sendMessageToMe(modifiedData);
+      await sendMessageToMe(modifiedData);
 
       reset({
         firstName: "",
