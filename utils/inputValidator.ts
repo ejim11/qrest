@@ -44,18 +44,18 @@ export const registrationOption = {
     },
   },
   company: {
-    required: "Company name is required",
-    minLength: {
-      value: 3,
-      message: "Name must have at least 3 characters",
-    },
-    maxLength: {
-      value: 200,
-      message: "Name cannot be greater than 200 characters",
-    },
-    pattern: {
-      value: /^(?!\s*$).+/,
-      message: "Company name is required",
-    },
+    // required: "Company name is required",
+    // minLength: {
+    //   value: 3,
+    //   message: "Name must have at least 3 characters",
+    // },
+    // maxLength: {
+    //   value: 200,
+    //   message: "Name cannot be greater than 200 characters",
+    // },
+    // pattern: {
+    //   value: /^(?!\s*$).+/,
+    //   message: "Company name is required",
+    // },
   },
 };
