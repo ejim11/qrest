@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(request: NextRequest) {
-  const { name, email, number, message } = await request.json();
+  const { firstName, lastName, company, email, message } = await request.json();
 
   const transporter = nodemailer.createTransport({
     // @ts-ignore
@@ -17,9 +17,13 @@ export async function POST(request: NextRequest) {
   });
 
   const mailOptions = {
-    from: `${name} <${"favourejim56@gmail.com"}>`,
+    from: ` ${
+      company ? `${company}` : `${firstName} ${lastName}`
+    } <${"support@qrest.ng"}>`,
     to: "Qrestcompany@gmail.com",
-    subject: `New message from ${name}, ${email}, ${number}`,
+    subject: `New message from ${
+      company ? `${company} ${email}` : `${firstName} ${lastName}, ${email}`
+    } `,
     text: message,
   };
 
