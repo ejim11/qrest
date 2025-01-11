@@ -11,9 +11,7 @@ export const metadata: Metadata = {
       "Qrest seeks passionate individuals to deliver user-centric solutions. Competitive benefits, room to grow.",
     type: "website",
     url: "https://www.qrest.ng/career",
-    images: [
-      { url: "https://i.ibb.co/n3G8MZV/Screenshot-2024-12-11-at-16-39-58.png" },
-    ],
+    images: [{ url: "https://i.ibb.co/Yh8CSLn/IMG-0627.jpg" }],
   },
 };
 

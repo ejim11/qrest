@@ -11,9 +11,7 @@ export const metadata: Metadata = {
       "Contact Qrest for inquiries, support, or feedback. Our team is ready to assist you today!",
     type: "website",
     url: "https://www.qrest.ng/contact",
-    images: [
-      { url: "https://i.ibb.co/n3G8MZV/Screenshot-2024-12-11-at-16-39-58.png" },
-    ],
+    images: [{ url: "https://i.ibb.co/Yh8CSLn/IMG-0627.jpg" }],
   },
 };
 
